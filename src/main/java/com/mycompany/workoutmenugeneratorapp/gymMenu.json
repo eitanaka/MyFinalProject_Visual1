@@ -1,0 +1,441 @@
+{
+    "chest": [  
+        {
+            "name":"Barbell Bench Press",
+            "desc":"The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.\nFor powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body.\n By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders.\nNot everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+            "link":"https://www.muscleandstrength.com/exercises/barbell-bench-press.html",
+            "reps":"10 8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 3
+        },
+        {
+            "name":"Incline Barbell Bench Press",
+            "desc":"The incline bench press is a variation of the bench press and an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well. Utilizing an incline will allow you to better target the upper portion of the chest, a lagging part for a lot of lifters. You can include incline bench press in your chest workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/incline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Decline Bench Press",
+            "desc":"The decline bench press is a variation of the bench press and an exercise used to target the muscles of the chest. It will also indirectly target the muscles of the shoulders and triceps.\nThe decline bench press is commonly used to target the lower portion of the pecs. However, some argue that it is the most effective bench press variation for targeting the entire chest.\nBench press variations can be included in your chest workouts, push workouts, upper body workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/decline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Dumbbell Bench Press",
+            "desc":"The dumbbell bench press is a variation of the barbell bench press and an exercise used to build the muscles of the chest.\nOften times, the dumbbell bench press is recommended after reaching a certain point of strength on the barbell bench press to avoid pec and shoulder injuries.\nAdditionally, the dumbbell bench press provides an ego check in the amount of weight used due to the need to maintain shoulder stability throughout the exercise.\nThe exercise itself can be featured as a main lift in your workouts or an accessory lift to the bench press depending on your goals.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-bench-press.html",
+            "reps":"10 10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Dumbbell Flys",
+            "desc":"The dumbbell fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger.\nThe dumbbell fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. The movement itself can be used to help build a stronger bench press but isn’t typically thought of from an increased performance stand-point.\nThus, this movement is best reserved for traditional chest workouts in bodybuilding style splits.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-flys.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Pullover",
+            "desc":"Grasp a dumbbell with both hands and position yourself on a flat bench with your shoulder blades resting on the bench.\nYou should be at a 90 degree angle to the bench. Your back shoulder be straight, knees bent at 90 degrees, and feet firmly plated on the floor.\nHolding the dumbbell in both hands, straighten your arms so that dumbbell is directly overhead. This is the starting position.\nBending at the shoulders only and keeping your arms straight, slowly lower the weight down behind your head until the dumbbell reaches the height of the bench.\nSlowly raise the dumbbell back to the starting position.\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-pullover.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        }     
+    ],
+    "back": [
+        {
+            "name":"Barbell Bench Press",
+            "desc":"The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.\nFor powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body.\n By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders.\nNot everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+            "link":"https://www.muscleandstrength.com/exercises/barbell-bench-press.html",
+            "reps":"10 8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 3
+        },
+        {
+            "name":"Incline Barbell Bench Press",
+            "desc":"The incline bench press is a variation of the bench press and an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well. Utilizing an incline will allow you to better target the upper portion of the chest, a lagging part for a lot of lifters. You can include incline bench press in your chest workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/incline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Decline Bench Press",
+            "desc":"The decline bench press is a variation of the bench press and an exercise used to target the muscles of the chest. It will also indirectly target the muscles of the shoulders and triceps.\nThe decline bench press is commonly used to target the lower portion of the pecs. However, some argue that it is the most effective bench press variation for targeting the entire chest.\nBench press variations can be included in your chest workouts, push workouts, upper body workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/decline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Dumbbell Bench Press",
+            "desc":"The dumbbell bench press is a variation of the barbell bench press and an exercise used to build the muscles of the chest.\nOften times, the dumbbell bench press is recommended after reaching a certain point of strength on the barbell bench press to avoid pec and shoulder injuries.\nAdditionally, the dumbbell bench press provides an ego check in the amount of weight used due to the need to maintain shoulder stability throughout the exercise.\nThe exercise itself can be featured as a main lift in your workouts or an accessory lift to the bench press depending on your goals.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-bench-press.html",
+            "reps":"10 10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Dumbbell Flys",
+            "desc":"The dumbbell fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger.\nThe dumbbell fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. The movement itself can be used to help build a stronger bench press but isn’t typically thought of from an increased performance stand-point.\nThus, this movement is best reserved for traditional chest workouts in bodybuilding style splits.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-flys.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Pullover",
+            "desc":"Grasp a dumbbell with both hands and position yourself on a flat bench with your shoulder blades resting on the bench.\nYou should be at a 90 degree angle to the bench. Your back shoulder be straight, knees bent at 90 degrees, and feet firmly plated on the floor.\nHolding the dumbbell in both hands, straighten your arms so that dumbbell is directly overhead. This is the starting position.\nBending at the shoulders only and keeping your arms straight, slowly lower the weight down behind your head until the dumbbell reaches the height of the bench.\nSlowly raise the dumbbell back to the starting position.\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-pullover.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        }
+    ],
+    "shoulder": [
+        {
+            "name":"Barbell Bench Press",
+            "desc":"The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.\nFor powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body.\n By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders.\nNot everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+            "link":"https://www.muscleandstrength.com/exercises/barbell-bench-press.html",
+            "reps":"10 8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 3
+        },
+        {
+            "name":"Incline Barbell Bench Press",
+            "desc":"The incline bench press is a variation of the bench press and an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well. Utilizing an incline will allow you to better target the upper portion of the chest, a lagging part for a lot of lifters. You can include incline bench press in your chest workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/incline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Dumbbell Bench Press",
+            "desc":"The dumbbell bench press is a variation of the barbell bench press and an exercise used to build the muscles of the chest.\nOften times, the dumbbell bench press is recommended after reaching a certain point of strength on the barbell bench press to avoid pec and shoulder injuries.\nAdditionally, the dumbbell bench press provides an ego check in the amount of weight used due to the need to maintain shoulder stability throughout the exercise.\nThe exercise itself can be featured as a main lift in your workouts or an accessory lift to the bench press depending on your goals.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-bench-press.html",
+            "reps":"10 10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Decline Bench Press",
+            "desc":"The decline bench press is a variation of the bench press and an exercise used to target the muscles of the chest. It will also indirectly target the muscles of the shoulders and triceps.\nThe decline bench press is commonly used to target the lower portion of the pecs. However, some argue that it is the most effective bench press variation for targeting the entire chest.\nBench press variations can be included in your chest workouts, push workouts, upper body workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/decline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Dumbbell Flys",
+            "desc":"The dumbbell fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger.\nThe dumbbell fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. The movement itself can be used to help build a stronger bench press but isn’t typically thought of from an increased performance stand-point.\nThus, this movement is best reserved for traditional chest workouts in bodybuilding style splits.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-flys.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Pullover",
+            "desc":"Grasp a dumbbell with both hands and position yourself on a flat bench with your shoulder blades resting on the bench.\nYou should be at a 90 degree angle to the bench. Your back shoulder be straight, knees bent at 90 degrees, and feet firmly plated on the floor.\nHolding the dumbbell in both hands, straighten your arms so that dumbbell is directly overhead. This is the starting position.\nBending at the shoulders only and keeping your arms straight, slowly lower the weight down behind your head until the dumbbell reaches the height of the bench.\nSlowly raise the dumbbell back to the starting position.\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-pullover.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        }
+    ],
+    "lower": [
+        {
+            "name":"Barbell Bench Press",
+            "desc":"The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.\nFor powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body.\n By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders.\nNot everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+            "link":"https://www.muscleandstrength.com/exercises/barbell-bench-press.html",
+            "reps":"10 8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 3
+        },
+        {
+            "name":"Incline Barbell Bench Press",
+            "desc":"The incline bench press is a variation of the bench press and an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well. Utilizing an incline will allow you to better target the upper portion of the chest, a lagging part for a lot of lifters. You can include incline bench press in your chest workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/incline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Dumbbell Bench Press",
+            "desc":"The dumbbell bench press is a variation of the barbell bench press and an exercise used to build the muscles of the chest.\nOften times, the dumbbell bench press is recommended after reaching a certain point of strength on the barbell bench press to avoid pec and shoulder injuries.\nAdditionally, the dumbbell bench press provides an ego check in the amount of weight used due to the need to maintain shoulder stability throughout the exercise.\nThe exercise itself can be featured as a main lift in your workouts or an accessory lift to the bench press depending on your goals.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-bench-press.html",
+            "reps":"10 10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Decline Bench Press",
+            "desc":"The decline bench press is a variation of the bench press and an exercise used to target the muscles of the chest. It will also indirectly target the muscles of the shoulders and triceps.\nThe decline bench press is commonly used to target the lower portion of the pecs. However, some argue that it is the most effective bench press variation for targeting the entire chest.\nBench press variations can be included in your chest workouts, push workouts, upper body workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/decline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Dumbbell Flys",
+            "desc":"The dumbbell fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger.\nThe dumbbell fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. The movement itself can be used to help build a stronger bench press but isn’t typically thought of from an increased performance stand-point.\nThus, this movement is best reserved for traditional chest workouts in bodybuilding style splits.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-flys.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Pullover",
+            "desc":"Grasp a dumbbell with both hands and position yourself on a flat bench with your shoulder blades resting on the bench.\nYou should be at a 90 degree angle to the bench. Your back shoulder be straight, knees bent at 90 degrees, and feet firmly plated on the floor.\nHolding the dumbbell in both hands, straighten your arms so that dumbbell is directly overhead. This is the starting position.\nBending at the shoulders only and keeping your arms straight, slowly lower the weight down behind your head until the dumbbell reaches the height of the bench.\nSlowly raise the dumbbell back to the starting position.\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-pullover.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        }
+    ],
+    "biceps": [
+        {
+            "name":"Barbell Bench Press",
+            "desc":"The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.\nFor powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body.\n By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders.\nNot everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+            "link":"https://www.muscleandstrength.com/exercises/barbell-bench-press.html",
+            "reps":"10 8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Incline Barbell Bench Press",
+            "desc":"The incline bench press is a variation of the bench press and an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well. Utilizing an incline will allow you to better target the upper portion of the chest, a lagging part for a lot of lifters. You can include incline bench press in your chest workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/incline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Bench Press",
+            "desc":"The dumbbell bench press is a variation of the barbell bench press and an exercise used to build the muscles of the chest.\nOften times, the dumbbell bench press is recommended after reaching a certain point of strength on the barbell bench press to avoid pec and shoulder injuries.\nAdditionally, the dumbbell bench press provides an ego check in the amount of weight used due to the need to maintain shoulder stability throughout the exercise.\nThe exercise itself can be featured as a main lift in your workouts or an accessory lift to the bench press depending on your goals.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-bench-press.html",
+            "reps":"10 10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Decline Bench Press",
+            "desc":"The decline bench press is a variation of the bench press and an exercise used to target the muscles of the chest. It will also indirectly target the muscles of the shoulders and triceps.\nThe decline bench press is commonly used to target the lower portion of the pecs. However, some argue that it is the most effective bench press variation for targeting the entire chest.\nBench press variations can be included in your chest workouts, push workouts, upper body workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/decline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Flys",
+            "desc":"The dumbbell fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger.\nThe dumbbell fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. The movement itself can be used to help build a stronger bench press but isn’t typically thought of from an increased performance stand-point.\nThus, this movement is best reserved for traditional chest workouts in bodybuilding style splits.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-flys.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Pullover",
+            "desc":"Grasp a dumbbell with both hands and position yourself on a flat bench with your shoulder blades resting on the bench.\nYou should be at a 90 degree angle to the bench. Your back shoulder be straight, knees bent at 90 degrees, and feet firmly plated on the floor.\nHolding the dumbbell in both hands, straighten your arms so that dumbbell is directly overhead. This is the starting position.\nBending at the shoulders only and keeping your arms straight, slowly lower the weight down behind your head until the dumbbell reaches the height of the bench.\nSlowly raise the dumbbell back to the starting position.\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-pullover.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        }
+    ],
+    "triceps": [
+        {
+            "name":"Barbell Bench Press",
+            "desc":"The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.\nFor powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body.\n By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders.\nNot everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+            "link":"https://www.muscleandstrength.com/exercises/barbell-bench-press.html",
+            "reps":"10 8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Incline Barbell Bench Press",
+            "desc":"The incline bench press is a variation of the bench press and an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well. Utilizing an incline will allow you to better target the upper portion of the chest, a lagging part for a lot of lifters. You can include incline bench press in your chest workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/incline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Bench Press",
+            "desc":"The dumbbell bench press is a variation of the barbell bench press and an exercise used to build the muscles of the chest.\nOften times, the dumbbell bench press is recommended after reaching a certain point of strength on the barbell bench press to avoid pec and shoulder injuries.\nAdditionally, the dumbbell bench press provides an ego check in the amount of weight used due to the need to maintain shoulder stability throughout the exercise.\nThe exercise itself can be featured as a main lift in your workouts or an accessory lift to the bench press depending on your goals.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-bench-press.html",
+            "reps":"10 10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Decline Bench Press",
+            "desc":"The decline bench press is a variation of the bench press and an exercise used to target the muscles of the chest. It will also indirectly target the muscles of the shoulders and triceps.\nThe decline bench press is commonly used to target the lower portion of the pecs. However, some argue that it is the most effective bench press variation for targeting the entire chest.\nBench press variations can be included in your chest workouts, push workouts, upper body workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/decline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Flys",
+            "desc":"The dumbbell fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger.\nThe dumbbell fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. The movement itself can be used to help build a stronger bench press but isn’t typically thought of from an increased performance stand-point.\nThus, this movement is best reserved for traditional chest workouts in bodybuilding style splits.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-flys.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Pullover",
+            "desc":"Grasp a dumbbell with both hands and position yourself on a flat bench with your shoulder blades resting on the bench.\nYou should be at a 90 degree angle to the bench. Your back shoulder be straight, knees bent at 90 degrees, and feet firmly plated on the floor.\nHolding the dumbbell in both hands, straighten your arms so that dumbbell is directly overhead. This is the starting position.\nBending at the shoulders only and keeping your arms straight, slowly lower the weight down behind your head until the dumbbell reaches the height of the bench.\nSlowly raise the dumbbell back to the starting position.\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-pullover.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        }
+    ],
+    "abs": [
+        {
+            "name":"Barbell Bench Press",
+            "desc":"The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.\nFor powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body.\n By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders.\nNot everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+            "link":"https://www.muscleandstrength.com/exercises/barbell-bench-press.html",
+            "reps":"10 8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Incline Barbell Bench Press",
+            "desc":"The incline bench press is a variation of the bench press and an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well. Utilizing an incline will allow you to better target the upper portion of the chest, a lagging part for a lot of lifters. You can include incline bench press in your chest workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/incline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Bench Press",
+            "desc":"The dumbbell bench press is a variation of the barbell bench press and an exercise used to build the muscles of the chest.\nOften times, the dumbbell bench press is recommended after reaching a certain point of strength on the barbell bench press to avoid pec and shoulder injuries.\nAdditionally, the dumbbell bench press provides an ego check in the amount of weight used due to the need to maintain shoulder stability throughout the exercise.\nThe exercise itself can be featured as a main lift in your workouts or an accessory lift to the bench press depending on your goals.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-bench-press.html",
+            "reps":"10 10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Decline Bench Press",
+            "desc":"The decline bench press is a variation of the bench press and an exercise used to target the muscles of the chest. It will also indirectly target the muscles of the shoulders and triceps.\nThe decline bench press is commonly used to target the lower portion of the pecs. However, some argue that it is the most effective bench press variation for targeting the entire chest.\nBench press variations can be included in your chest workouts, push workouts, upper body workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/decline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Flys",
+            "desc":"The dumbbell fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger.\nThe dumbbell fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. The movement itself can be used to help build a stronger bench press but isn’t typically thought of from an increased performance stand-point.\nThus, this movement is best reserved for traditional chest workouts in bodybuilding style splits.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-flys.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Pullover",
+            "desc":"Grasp a dumbbell with both hands and position yourself on a flat bench with your shoulder blades resting on the bench.\nYou should be at a 90 degree angle to the bench. Your back shoulder be straight, knees bent at 90 degrees, and feet firmly plated on the floor.\nHolding the dumbbell in both hands, straighten your arms so that dumbbell is directly overhead. This is the starting position.\nBending at the shoulders only and keeping your arms straight, slowly lower the weight down behind your head until the dumbbell reaches the height of the bench.\nSlowly raise the dumbbell back to the starting position.\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-pullover.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        }
+    ],
+    "cardio": [
+        {
+            "name":"Barbell Bench Press",
+            "desc":"The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.\nFor powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body.\n By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders.\nNot everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+            "link":"https://www.muscleandstrength.com/exercises/barbell-bench-press.html",
+            "reps":"10 8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 3
+        },
+        {
+            "name":"Incline Barbell Bench Press",
+            "desc":"The incline bench press is a variation of the bench press and an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well. Utilizing an incline will allow you to better target the upper portion of the chest, a lagging part for a lot of lifters. You can include incline bench press in your chest workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/incline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Decline Bench Press",
+            "desc":"The decline bench press is a variation of the bench press and an exercise used to target the muscles of the chest. It will also indirectly target the muscles of the shoulders and triceps.\nThe decline bench press is commonly used to target the lower portion of the pecs. However, some argue that it is the most effective bench press variation for targeting the entire chest.\nBench press variations can be included in your chest workouts, push workouts, upper body workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/decline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Dumbbell Flys",
+            "desc":"The dumbbell fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger.\nThe dumbbell fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. The movement itself can be used to help build a stronger bench press but isn’t typically thought of from an increased performance stand-point.\nThus, this movement is best reserved for traditional chest workouts in bodybuilding style splits.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-flys.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Pullover",
+            "desc":"Grasp a dumbbell with both hands and position yourself on a flat bench with your shoulder blades resting on the bench.\nYou should be at a 90 degree angle to the bench. Your back shoulder be straight, knees bent at 90 degrees, and feet firmly plated on the floor.\nHolding the dumbbell in both hands, straighten your arms so that dumbbell is directly overhead. This is the starting position.\nBending at the shoulders only and keeping your arms straight, slowly lower the weight down behind your head until the dumbbell reaches the height of the bench.\nSlowly raise the dumbbell back to the starting position.\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-pullover.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        }
+    ]
+}

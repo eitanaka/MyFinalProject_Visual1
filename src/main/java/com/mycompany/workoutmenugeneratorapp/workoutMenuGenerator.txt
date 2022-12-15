@@ -1,0 +1,196 @@
+Window 1: Title Window or LogIn window
+
+Window 2: User Information Window
+    <Components>
+        - Title Label(2)
+
+        - Body Information(Label)
+            - Height (Label & Text Field)
+            - Weight (Label & Text Field)
+            - Age (Label & Text Field or pull down bar)
+            - Gender (Label & Button for male and female)
+
+        - Equipment (Label)
+            - Gym (Label & button)
+            - Home (Label & button)
+        
+        - Frequency (Label)
+            - Day(Button 7)
+
+        - Goal
+            - Building Muscle
+            - Keeping Healthy
+            - Loss Fat
+
+        - Generate Menu Button
+
+        (- Log out button)
+
+    <Task>
+        When "Generate Menu" Button clicked, make array lists including each work out menu for user to do based on user information.
+        - These workout menu is passed to every window as objects.
+        (- These workout menu is written as JSON file to save.)
+
+        Questions
+        - How to identify date??
+
+Window 3: Daily Menu Window
+
+Window 4: Weekly Menu Window
+
+Window 5: Monthly Menu Window
+
+<MileStone>
+1. At first I have got to implement this application which has only daily menu generating functionality.
+2. Next, I'm gonna develop this app to add weekly functionality. This contains showing menu & display daily menu properly.
+3. Third, I'm gonna update this app to add monthly calender functionality. This update will allows user to see monthly workout menu data on the calender.
+4. Finally, I'm gonna update this app to add log in functionality. IDK how to do that though.
+
+
+*Pseudocode for "generate menu" button
+
+(When clicked button)
+
+1. Read appropriate JSON file through GSON and make objects.
+2. Add them into array list based on user information conditions.
+3. Share this object to different window!
+
+Conditions
+if (equipment == "gym") {
+    read gym JSON file
+} else {
+    read home JSON file
+{
+
+Convert JSON to Java Object
+WorkoutMenu objects = new Gson().fromJSON(json, WorkoutMenu.class);
+
+if (user frequency = "...") {
+    Make arrayList * frequent
+}
+
+if (user frequency = 1 ) {
+   arrayList = generate total body menu()
+} else if (2) {
+    arrayList 1 = generate upper Menu()
+    arrayList 2 = generate lower Menu()
+} else if (3) {
+    arrayList 1 = generate push Menu()
+    arryalist 2 = generate pull Menu()
+    arrayList 3 = generate lower Menu()
+} else if (4) {
+    arrayList 1 = generate Chest Menu()
+    arrayList 2 = generate back Menu()
+    arrayList 3 = generate lower Menu()
+    arrayList 4 = generate shoulder Menu()
+} else if (5) {
+    arrayList 1 = chest Menu
+    arrayList 2 = back Menu
+    arrayList 3 = lower Menu
+    arrayList 4 = shoulder Menu
+    arrayList 5 = arm Menu
+} else if (6) {
+    arrayList 1 = chest Menu
+    arrayList 2 = back Menu
+    arrayList 3 = lower Menu
+    arrayList 4 = shoulder Menu
+    arrayList 5 = arm Menu
+    arrayList 6 = abs Menu
+} elsr if (7) {
+    arrayList 1 = chest Menu
+    arrayList 2 = back menu
+    arrayList 3 = lower menu
+    arrayList 4 = shoulder menu
+    arrayList 5 = arm menu
+    arrayList 6 = abs menu
+    arrayList 7 = null(rest)
+}
+ 
+Methods for making workout menu for each part
+
+public static WorkoutMenu[] generateTotalBodyMenu(JSON OBJECTS) {
+    private WorkoutMenu[] totalBodyMenu = new WorkoutMenu[5];
+    bool chestMenu = false;
+    bool backMenu = false;
+    bool shoulderMenu = false;
+    bool lowerMenu = false;
+    bool armMenu = false;
+
+    while !(chestMenu) {
+        int randomIndex = randome number generator;
+
+        WorkoutMenu tmpObj = Objects.chest[randomIndex]
+
+        if (tmpObj.goal contains user.goals) {
+            if (tmpObj.categories contains "chest") {
+                if (tmpObj not in totalBodyMenu) {
+                    insert tmpObj to totalBodyMenu
+                    chestmenu = true;
+                }
+            }
+        }
+        
+        same Above for back
+        same Above for shoulder
+        same Above for lower
+        same Above for arm
+    }
+
+    return totalBodyMenu
+}
+
+public static WorkoutMenu[] generateUpperMenu(JSON OBJECTS) {
+    private WorkoutMenu[] upperMenu = new WorkoutMenu[5];
+    bool hardmenu = false;
+    bool mediumMenu1 = false;
+    bool mediumMenu2 = false;
+    bool easyMenu1 = false;
+    bool easyMenu2 = false;
+    bool isAllSet = false;
+
+    while !(isAllSet) {
+        if (objects.upper[randIndex].categories
+    }
+}
+
+public static WorkOutMenu[] genetateLowerMenu(JSON OBJECTS){}
+
+public static WorkOutMenu[] genetateChestMenu(JSON OBJECTS){}
+public static WorkOutMenu[] genetateBackMenu(JSON OBJECTS){}
+public static WorkOutMenu[] genetateShoulderMenu(JSON OBJECTS){}
+public static WorkOutMenu[] genetateAbsMenu(JSON OBJECTS){}
+public static WorkOutMenu[] genetateArmMenu(JSON OBJECTS){}
+
+Memo
+
+weeklyMenu = {
+    sundayMenu,
+    mondayMenu,
+    tuesdayMenu,
+    wednesdayMenu,
+    thursdayMenu,
+    fridayMenu,
+    saturdayMenu
+}
+
+bool<> isSelected = {
+    false, // sunday 
+    true,  // monday
+    false, // tuesday
+    true,   // wednesday
+    false, // thursday
+    true,   // friday
+    false,  // saturday
+}
+
+ArrayList<MenuItemList> menuList = new ArrayList<>;
+menuList.set(0,
+
+for (int i = 0, i < 7, i++) {
+    if (boolList.get(i)) {
+    weeklyMenu.add(menuList.get(counter).clone())
+    else {
+        weeklyMenu.add(null);
+    }
+    counter++;
+}

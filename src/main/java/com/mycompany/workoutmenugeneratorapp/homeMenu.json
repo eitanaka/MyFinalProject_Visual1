@@ -1,0 +1,162 @@
+{
+    "chest": [  
+        {
+            "name":"Bench Press",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        },
+        {
+            "name":"Incline Dumbel Press",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 2
+        }
+    ],
+    "back": [
+      {
+            "name":"Dead Lift",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        },
+        {
+            "name":"Lat Pull Down",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        }  
+    ],
+    "shoulder": [
+        {
+            "name":"Militally Press",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        },
+        {
+            "name":"Arnold Press",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        }  
+    ],
+    "lower": [
+        {
+            "name":"Full Squad",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        },
+        {
+            "name":"Bulgarian Squad",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        }  
+    ],
+    "biceps": [
+         {
+            "name":"Arm Curl",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        },
+        {
+            "name":"Precher Curl",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        }
+    ],
+    "triceps": [
+        {
+            "name":"Cable Pull",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        },
+        {
+            "name":"Skull Crusher",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        }
+    ],
+    "abs": [
+        {
+            "name":"Dragon Fly",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        },
+        {
+            "name":"Leg Raise",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        }
+    ],
+    "cardio": [
+        {
+            "name":"Running Machine",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        },
+        {
+            "name":"Running",
+            "desc":"...",
+            "link":"...",
+            "reps":"10 8 8 6 4",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male"],
+            "intensity": 3
+        }
+    ]
+}
