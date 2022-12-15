@@ -15,13 +15,18 @@ import javax.swing.JOptionPane;
  * @author eitanaka
  */
 public class UserInformationWindow extends javax.swing.JFrame {
-
+   public UserInformationWindow userInfoWin;
+   private LogInWindow logInWin;
+   private WeeklyMenuWindow weeklyMenuWin;      
     /**
      * Creates new form UserInformationWindow
      */
     public UserInformationWindow() {
         initComponents();
-    }
+        weeklyMenuWin = new WeeklyMenuWindow();        
+        weeklyMenuWin.setUserInfoWindow(this);
+        weeklyMenuWin.setLogInWindow(this.logInWin);
+    }        
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -223,6 +228,11 @@ public class UserInformationWindow extends javax.swing.JFrame {
 
         logOutBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         logOutBtn.setText("Log Out");
+        logOutBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logOutBtnActionPerformed(evt);
+            }
+        });
 
         equipmentLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         equipmentLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -555,6 +565,9 @@ public class UserInformationWindow extends javax.swing.JFrame {
         
         // Step 6: Share weeklyMenu arrayList to the other windows
         // Fin.
+        this.setVisible(false);
+        weeklyMenuWin.setVisible(true);
+        
         
         // Test
         for (int i = 0; i < 7; i++) {
@@ -627,6 +640,15 @@ public class UserInformationWindow extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_heightFieldActionPerformed
 
+    private void logOutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logOutBtnActionPerformed
+        this.setVisible(false);
+        logInWin.setVisible(true);
+    }//GEN-LAST:event_logOutBtnActionPerformed
+
+    public void setLogInWindow(LogInWindow myCreater) {
+        logInWin = myCreater;        
+    }    
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField ageField;
     private javax.swing.JLabel ageLabel;
@@ -660,8 +682,4 @@ public class UserInformationWindow extends javax.swing.JFrame {
     private javax.swing.JLabel weightLabel;
     // End of variables declaration//GEN-END:variables
 
-    public static void main(String[] args) {
-        UserInformationWindow win = new UserInformationWindow();
-        win.setVisible(true);
-    }
 }

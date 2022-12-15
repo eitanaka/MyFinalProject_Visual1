@@ -9,12 +9,19 @@ package com.mycompany.workoutmenugeneratorapp;
  * @author eitanaka
  */
 public class WeeklyMenuWindow extends javax.swing.JFrame {
-
+    public WeeklyMenuWindow weeklyMenu;  
+    private LogInWindow logInWin;
+    private UserInformationWindow userInfoWin;
+    private DailyMenuWindow dailyMenuWin;    
+    
     /**
      * Creates new form WeeklyMenuWindwo
      */
     public WeeklyMenuWindow() {
         initComponents();
+        dailyMenuWin = new DailyMenuWindow();        
+        dailyMenuWin.setWeeklyMenuWindow(this); 
+        dailyMenuWin.setLogInWindow(this.logInWin);
     }
 
     /**
@@ -50,7 +57,6 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
         jScrollPane7 = new javax.swing.JScrollPane();
         saturdayList = new javax.swing.JList<>();
         detailBtn = new javax.swing.JButton();
-        monthlyMenuBtn = new javax.swing.JButton();
         dailyMenuBtn1 = new javax.swing.JButton();
         logOutBtn = new javax.swing.JButton();
 
@@ -154,14 +160,21 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
         detailBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         detailBtn.setText("Menu Detail");
 
-        monthlyMenuBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        monthlyMenuBtn.setText("Monthly Menu");
-
         dailyMenuBtn1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         dailyMenuBtn1.setText("Daily Menu");
+        dailyMenuBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dailyMenuBtn1ActionPerformed(evt);
+            }
+        });
 
         logOutBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         logOutBtn.setText("Log out");
+        logOutBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logOutBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -213,8 +226,6 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(logOutBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(monthlyMenuBtn)
-                        .addGap(18, 18, 18)
                         .addComponent(dailyMenuBtn1)))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
@@ -248,7 +259,6 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 244, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(dailyMenuBtn1)
-                    .addComponent(monthlyMenuBtn)
                     .addComponent(logOutBtn))
                 .addGap(15, 15, 15))
         );
@@ -256,6 +266,23 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void dailyMenuBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dailyMenuBtn1ActionPerformed
+        this.setVisible(false);
+        dailyMenuWin.setVisible(true);
+    }//GEN-LAST:event_dailyMenuBtn1ActionPerformed
+
+    private void logOutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logOutBtnActionPerformed
+        this.setVisible(false);
+        logInWin.setVisible(true);
+    }//GEN-LAST:event_logOutBtnActionPerformed
+
+    public void setUserInfoWindow(UserInformationWindow myCreater) {
+        userInfoWin = myCreater;
+    }        
+    
+    public void setLogInWindow(LogInWindow myCreater) {
+        logInWin = myCreater;
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton dailyMenuBtn1;
     private javax.swing.JButton detailBtn;
@@ -271,7 +298,6 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
     private javax.swing.JButton logOutBtn;
     private javax.swing.JLabel mondayLabel;
     private javax.swing.JList<String> mondayList1;
-    private javax.swing.JButton monthlyMenuBtn;
     private javax.swing.JLabel saturdayLabel;
     private javax.swing.JList<String> saturdayList;
     private javax.swing.JLabel sundayLabel;

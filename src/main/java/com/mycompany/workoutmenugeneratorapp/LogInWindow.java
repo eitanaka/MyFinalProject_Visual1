@@ -8,13 +8,16 @@ package com.mycompany.workoutmenugeneratorapp;
  *
  * @author eitanaka
  */
-public class LogInWindow extends javax.swing.JFrame {
-
+public class LogInWindow extends javax.swing.JFrame {    
+    public LogInWindow logInWind;    
+    private UserInformationWindow userInfoWin;            
     /**
      * Creates new form LogInWindow
      */
     public LogInWindow() {
-        initComponents();
+        initComponents();         
+        userInfoWin = new UserInformationWindow();
+        userInfoWin.setLogInWindow(this);        
     }
 
     /**
@@ -57,10 +60,20 @@ public class LogInWindow extends javax.swing.JFrame {
 
         logInBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         logInBtn.setText("Log In");
+        logInBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logInBtnActionPerformed(evt);
+            }
+        });
 
         createAccountBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         createAccountBtn.setText("Create Account");
         createAccountBtn.setToolTipText("");
+        createAccountBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                createAccountBtnActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -112,6 +125,16 @@ public class LogInWindow extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void createAccountBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createAccountBtnActionPerformed
+        // TODO add your handling code here:        
+    }//GEN-LAST:event_createAccountBtnActionPerformed
+
+    private void logInBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logInBtnActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        userInfoWin.setVisible(true);
+    }//GEN-LAST:event_logInBtnActionPerformed
 
     /**
      * @param args the command line arguments

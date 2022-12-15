@@ -76,8 +76,6 @@
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="logOutBtn" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="monthlyMenuBtn" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="dailyMenuBtn1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -117,7 +115,6 @@
               <EmptySpace pref="244" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="dailyMenuBtn1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="monthlyMenuBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="logOutBtn" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
@@ -417,14 +414,6 @@
         <Property name="text" type="java.lang.String" value="Menu Detail"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="monthlyMenuBtn">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Helvetica Neue" size="18" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Monthly Menu"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="dailyMenuBtn1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -432,6 +421,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Daily Menu"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dailyMenuBtn1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="logOutBtn">
       <Properties>
@@ -440,6 +432,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Log out"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="logOutBtnActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

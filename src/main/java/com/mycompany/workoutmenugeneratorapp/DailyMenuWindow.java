@@ -8,8 +8,11 @@ package com.mycompany.workoutmenugeneratorapp;
  *
  * @author eitanaka
  */
-public class DailyMenuWindow extends javax.swing.JFrame {
-
+public class DailyMenuWindow extends javax.swing.JFrame {    
+    
+    private WeeklyMenuWindow weeklyMenuWin;    
+    private LogInWindow logInWin;
+            
     /**
      * Creates new form DailyMenuWindow
      */
@@ -38,7 +41,6 @@ public class DailyMenuWindow extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
         menuDetailBtn = new javax.swing.JButton();
-        monthlyBtn = new javax.swing.JButton();
         weeklyBtn = new javax.swing.JButton();
         logOutBtn = new javax.swing.JButton();
         repsLabel = new javax.swing.JLabel();
@@ -83,15 +85,22 @@ public class DailyMenuWindow extends javax.swing.JFrame {
         menuDetailBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         menuDetailBtn.setText("More Menu Detail");
 
-        monthlyBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        monthlyBtn.setText("Monthly Menu");
-
         weeklyBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         weeklyBtn.setText("Weekly Menu");
+        weeklyBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                weeklyBtnActionPerformed(evt);
+            }
+        });
 
         logOutBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         logOutBtn.setText("Log Out");
         logOutBtn.setToolTipText("");
+        logOutBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logOutBtnActionPerformed(evt);
+            }
+        });
 
         repsLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         repsLabel.setText("Reps:");
@@ -128,8 +137,6 @@ public class DailyMenuWindow extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(logOutBtn)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(monthlyBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(weeklyBtn)))
                 .addGap(0, 35, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -170,7 +177,6 @@ public class DailyMenuWindow extends javax.swing.JFrame {
                 .addComponent(menuDetailBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 868, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(monthlyBtn)
                     .addComponent(weeklyBtn)
                     .addComponent(logOutBtn))
                 .addGap(21, 21, 21))
@@ -179,6 +185,23 @@ public class DailyMenuWindow extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void weeklyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_weeklyBtnActionPerformed
+        this.setVisible(false);
+        weeklyMenuWin.setVisible(true);
+    }//GEN-LAST:event_weeklyBtnActionPerformed
+
+    private void logOutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logOutBtnActionPerformed
+        this.setVisible(false);
+        logInWin.setVisible(true);
+    }//GEN-LAST:event_logOutBtnActionPerformed
+
+    public void setWeeklyMenuWindow(WeeklyMenuWindow myCreater) {
+        weeklyMenuWin = myCreater;
+    }
+    
+    public void setLogInWindow(LogInWindow myCreater) {
+        logInWin = myCreater;
+    }                
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel dailyMenuLabel;
     private javax.swing.JList<String> dailyMenuList;
@@ -190,7 +213,6 @@ public class DailyMenuWindow extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JButton logOutBtn;
     private javax.swing.JButton menuDetailBtn;
-    private javax.swing.JButton monthlyBtn;
     private javax.swing.JLabel nameLabel;
     private javax.swing.JTextField repsField;
     private javax.swing.JLabel repsLabel;

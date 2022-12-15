@@ -136,6 +136,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Log In"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="logInBtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="createAccountBtn">
       <Properties>
@@ -145,6 +148,9 @@
         <Property name="text" type="java.lang.String" value="Create Account"/>
         <Property name="toolTipText" type="java.lang.String" value=""/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="createAccountBtnActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
