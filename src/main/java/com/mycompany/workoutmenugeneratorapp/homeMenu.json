@@ -1,22 +1,86 @@
 {
     "chest": [  
         {
-            "name":"Bench Press",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
+            "name":"Push Up",
+            "desc":"The push up is an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well.\nThe push up is an old school movement that nearly everyone has performed at one point or another in their lifetime. The exercise is extremely beneficial in not only building the chest but also promoting healthy shoulder stability.\nYou can include push up in your chest workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/push-up.html",
+            "reps":"10 10 10",
             "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
-            "intensity": 3
+            "gender":["male", "female"],
+            "intensity":3
         },
         {
-            "name":"Incline Dumbel Press",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
+           "name":"Svend Press",
+          "desc":"The silliest-looking move on our best chest exercise list will probably burn the worst (read: the best). To avoid dropping two plates on your toes, you need to squeeze the weights together continuously. That alone will get those pecs activated.\nThen, you’ll extend your arms to squeeze the chest together even more. The Svend press (or plate pinch) is low-impact and so safer compared to heavy pressing. It also requires little equipment (so you won’t need to wait for a bench to open up on International chest day.)",
+          "link":"https://barbend.com/best-chest-exercises/#8",
+          "reps":"10 8 8",
+          "goal":["muscle", "healthy", "fat"],
+          "gender":["male", "female"],
+          "intensity":3
+        },
+        {
+            "name":"Incline Dumbbell Bench Press",
+            "desc":"The incline dumbbell bench press is a variation of the incline bench press and an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well.\nUtilizing an incline will allow you to better target the upper portion of the chest, a lagging part for a lot of lifters.\nThe use of dumbbells will also promote balanced and equal strength among both sides of the chest. They can also help prevent shoulder and pec injuries when performing presses.",
+            "link":"https://www.muscleandstrength.com/exercises/incline-dumbbell-bench-press.html",
+            "reps":"10 8 8",
             "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
-            "intensity": 2
+            "gender":["male", "female"],
+            "intensity":2
+        },
+        {
+           "name":"Dumbbell Floor Press",
+          "desc":"The dumbbell floor press overloads your triceps and chest while limiting your range of motion (ROM). This makes it easier for the shoulders than the barbell version. This is due to your shoulders not going into external rotation where your shoulder joints are most vulnerable to injury.\nBeing on the floor reduces your lower body involvement. It also shifts more emphasis to your chest and triceps for better muscle-building potential with a lower weight.",
+          "link":"https://barbend.com/best-chest-exercises/#12",
+          "reps":"10 8 8",
+          "goal":["muscle", "healthy", "fat"],
+          "gender":["male", "female"],
+          "intensity":2
+
+        },
+        {
+            "name":"Dumbbell Bench Press",
+            "desc":"The dumbbell bench press is a variation of the barbell bench press and an exercise used to build the muscles of the chest.\nOften times, the dumbbell bench press is recommended after reaching a certain point of strength on the barbell bench press to avoid pec and shoulder injuries.\nAdditionally, the dumbbell bench press provides an ego check in the amount of weight used due to the need to maintain shoulder stability throughout the exercise.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-bench-press.html",
+            "reps":"10 8 8",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":2
+
+        },
+        {
+            "name":"Dumbbell Pullover",
+            "desc":"Grasp a dumbbell with both hands and position yourself on a flat bench with your shoulder blades resting on the bench.\nYou should be at a 90 degree angle to the bench. Your back shoulder be straight, knees bent at 90 degrees, and feet firmly plated on the floor.\nHolding the dumbbell in both hands, straighten your arms so that dumbbell is directly overhead. This is the starting position.\nBending at the shoulders only and keeping your arms straight, slowly lower the weight down behind your head until the dumbbell reaches the height of the bench.\nSlowly raise the dumbbell back to the starting position\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-pullover.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":2
+        },
+        {
+            "name":"Dumbbell Flys",
+            "desc":"The dumbbell fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger.\nThe dumbbell fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. The movement itself can be used to help build a stronger bench press but isn’t typically thought of from an increased performance stand-point.\nThus, this movement is best reserved for traditional chest workouts in bodybuilding style splits.",   "link":"https://www.muscleandstrength.com/exercises/dumbbell-flys.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Diamond Press-up",
+            "desc":"Perform a press-up with your hands close enough for the tips of your thumbs and index fingers to touch. As you lower keep your elbows tucked in to the side of your body.",
+            "link":"https://www.menshealth.com/uk/building-muscle/g751116/crank-up-your-chest-without-lifting-weights-348714/",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Decline Press-up",
+            "desc":"Place your feet on a bench with your hands planted on the floor in front of you. Lower your body down until your chest almost reaches the floor. Press your body back up to the starting position while squeezing your chest. Pause briefly at the top before repeating.",
+            "link":"https://www.menshealth.com/uk/building-muscle/g751116/crank-up-your-chest-without-lifting-weights-348714/",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
         }
     ],
     "back": [
@@ -61,102 +125,399 @@
     ],
     "lower": [
         {
-            "name":"Full Squad",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
-            "goal":["muscle", "healthy", "fat"],
+            "name":"Barbell Back Squat",
+            "desc":"The squat is the king of all exercises, working over 256 muscles in one movement! From bodybuilders to powerlifters to competitive athletes, the squat is a staple compound exercise and should be in every workout plan.\nFor powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, having an explosive squat is a good indicator for on field/court performance. And for bodybuilders, the squat is a compound exercise that targets nearly every muscle of your lower body and core.", 
+            "link":"https://www.muscleandstrength.com/exercises/squat.html",
+            "reps":"10 8 8 6",
+            "goal": ["muscle", "fat"],
             "gender":["male"],
             "intensity": 3
         },
-        {
-            "name":"Bulgarian Squad",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
-            "goal":["muscle", "healthy", "fat"],
+        { 
+            "name":"Leg Extension",
+            "desc":"The seated leg extension is an isolation exercise and one used to target the muscles of the quads.\nThis exercise can be particularly hard on the knees. So, for those with prior knee issues, it may be beneficial to stick with other movements, preferably compound, to target your quads.\nThe leg extension is a great exercise for quad development and may be beneficial to include in your workout routines if your goals are more aesthetics-driven.",
+            "link":"https://www.muscleandstrength.com/exercises/leg-extension.html",
+            "reps":"12 12 12",
+            "goal": ["muscle", "healthy"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        { 
+            "name":"Leg Curl",
+            "desc":"1. The lying leg curl is a great exercise to isolate the hamstrings. Set up for the leg curl by selecting the weight you want to use on the stack and adjusting the padding to suit your leg length. Lay face down on the machine. The padding should be positioned just above the back of your ankles. If it's higher than that, adjust the length. Tense up the hamstrings by taking the weight slightly off the stack. This is the starting position for the exercise. Squeeze the hamstrings and curl the weight up as far as possible. Squeeze the hamstring hard, and then slowly lower the weight back to the starting position. Repeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/leg-curl.html",
+            "reps":"12 12 12",
+            "goal": ["muscle", "healthy"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        { 
+            "name":"Standing Barbell Calf",
+            "desc":"Set up for the standing barbell calf raise by getting a block or step and placing it in front of you. Grasp a barbell and place it across the back of your shoulders. Make sure the bar sits across the muscles in your upper back, not your neck. Stand up on the block with the balls of your feet on the edge. Keeping your balance, raise your heels off the floor. Squeeze the calves, and then slowly lower your heals back down as far as possible without letting them touch the floor. Repeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/standing-calf-raise.html",
+            "reps":"12 12",
+            "goal": ["muscle", "healthy", "fat"],
             "gender":["male"],
-            "intensity": 3
-        }  
+            "intensity":1
+        },
+        { 
+            "name":"Seated Calf",
+            "desc":"The seated calf raise is a variation of the machine calf raise and an exercise used to isolate the muscles of the calves.\nThe calves can be a stubborn muscle group for a lot of people, so it’s important to experiment with several different angles when performing calf raises. You may also want to consider training the calves with a high training frequency.\nThe seated calf raise can be incorporated into your leg workouts and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/seated-calf-raise.html",
+            "reps":"12 12",
+            "goal": ["muscle", "healthy"],
+            "gender":["male"],
+            "intensity":1
+        },
+        { 
+            "name":"Conventional Deadlift",
+            "desc":"The deadlift is an extremely popular exercise and a true test of total body strength. It is popular across numerous weight lifting circle including bodybuilders, powerlifts, and Crossfit athletes. The deadlift focuses on lifting dead weight off the ground to hip level without using momentum to assist the weight on its path up. It is known as one of the “big three” exercises for powerlifters which includes squats, bench press, and the deadlift. Bodybuilders use the deadlift to promote muscle growth in their entire posterior chain (muscles on the back of the body). The deadlift primarily works the muscles of the hamstrings. However, it is a complete compound exercise and also requires muscle activation from the back, glutes, hamstrings, arms, and core.",
+            "link":"https://www.muscleandstrength.com/exercises/deadlifts.html",
+            "reps":"12 10 12",
+            "goal": ["muscle"],
+            "gender":["male"],
+            "intensity":3
+        },
+        { 
+            "name":"Dumbbell Walking Lunge",
+            "desc":"The dumbbell walking lunge is a variation of the dumbbell lunge. It is a little more advanced than other lunge variations and should be worked up to.\nThe dumbbell walking lunge is a complete leg builder. While it does emphasize growth in the quads, it also works the hamstrings, glutes, and many other muscles of the body due to its complexity.\nSome lifters opt for the dumbbell walking lunge over the barbell walking lunge, because it brings the weight to the sides of the body and prohibits excessive forward leaning often experienced when performing them with a barbell.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-walking-lunge.html",
+            "reps":"12 12 12",
+            "goal": ["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        { 
+            "name":"Front Squat",
+            "desc":"The front squat is a variation of the squat and an exercise used to build the muscles of the legs. In particular, the front squat will place a lot of emphasis on the quads.\nThe squat movement pattern is a foundational movement and should be performed by most capable individuals throughout their lives. So, it is important to find a variation that is comfortable for you to perform, and continuously work on it.",
+            "link":"https://www.muscleandstrength.com/exercises/front-squat.html",
+            "reps":"12 10 12",
+            "goal": ["muscle"],
+            "gender":["male"],
+            "intensity":3
+        },
+         { 
+            "name":"Dumbbell Goblet Squat",
+            "desc":"The dumbbell goblet squat is a variation of the squat and an exercise used to build the muscles of the legs. In particular, the dumbbell goblet squat will place a lot of emphasis on the quads.\nThe squat movement pattern is a foundational movement and should be performed by most capable individuals throughout their lives. So, it is important to find a variation that is comfortable for you to perform, and continuously work on it.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-goblet-squat",
+            "reps":"10 10 10",
+            "goal": ["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        { 
+            "name":"Dumbbell Lunge",
+            "desc":"Choose a pair of dumbbells and stand up straight with a slight bend in your knees. Hold the dumbbells down at your sides. You are now in the starting position. Step forward with your left leg while maintaining your balance and squat down through your hips. Keep your torso straight and head up. Don't allow your knee to track out over your toes. Push yourself back to the starting position by using your heal to drive you. Repeat this movement with your right leg and then repeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-lunge.html",
+            "reps":"10 10",
+            "goal": ["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        { 
+            "name":"Kettlebell Swing",
+            "desc":"The kettlebell swing is a total body movement that primarily works the muscles of the posterior chain, emphasizing the hamstring complex.\nThe kettlebell swing is an excellent starting point for those learning the hip hinge movement pattern. From there one can progress to more advanced hip hinges such as the deadlift.\nRegardless, the kettlebell swing is a great exercise to incorporate into your workout program for general health purposes.",
+            "link":"https://www.muscleandstrength.com/exercises/kettlebell-swing",
+            "reps":"10 10 10",
+            "goal": ["healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        }
     ],
     "biceps": [
          {
-            "name":"Arm Curl",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
+            "name":"Standing Barbell Cur",
+            "desc":"The standing barbell curl is the cornerstone of many bicep building routines. Grasp a barbell or Olympic bar at around shoulder width apart using an underhand grip (palms facing up).\nStand straight up, feet together (you may be more comfortable putting one foot back for stability), back straight, and with your arms fully extended.\nThe bar should not be touching your body.\nKeeping your eyes facing forwards, elbows tucked in at your sides, and your body completely still, slowly curl the bar up.\nSqueeze your biceps hard at the top of the movement, and then slowly lower it back to the starting position.\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/standing-barbell-curl.html",
+            "reps":"10 10 10",
             "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
-            "intensity": 3
+            "gender":["male", "female"],
+            "intensity":1
         },
         {
-            "name":"Precher Curl",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
+            "name":"EZ Bar Preacher Curl",
+            "desc":"The EZ bar preacher curl is a great exercise to isolate the biceps, while minimizing the strain on your wrists. Adjust the seat on the preacher bench so that your upper arms sit comfortably on the padding when seated.\nLoad the desired weight on the barbell.\nSit on the preacher bench and grip the EZ bar with your hands shoulder width apart using an underhand (palms facing up) grip. (note: You can use a wide or narrow grip on this exercise)\nKeeping your back straight and eyes facing forward, take the weight off the rack so that you're supporting it with your arms slightly bent. This is the starting position.\nSlowly bring the weight up until your forearms are at a right angle to the floor.\nSqueeze the bicep at the top of the movement, and then slowly lower it back to the starting position.\nRepeat for desired reps",
+            "link":"https://www.muscleandstrength.com/exercises/ez-bar-preacher-curl.html",
+            "reps":"10 10 10",
             "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
-            "intensity": 3
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Incline Dumbbell Curl",
+            "desc":"The incline dumbbell curl is a variation of the dumbbell curl and an exercise used to build bigger biceps.\nThe biceps is a tricky (and fun) muscle to target and putting yourself in various degrees of incline can help manipulate the range of motion for either a tighter contraction or deeper stretch.\nThe incline dumbbell curl elongates the negative portion of the dumbbell curl, creating a deeper stretch on the biceps muscle tissue.",
+            "link":"https://www.muscleandstrength.com/exercises/incline-dumbbell-curl.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Concentration Curl",
+            "desc":"The concentration curl is a bodybuilding favorite for building biceps.\nSome promote the concentration curl claiming it to be an exercise guaranteed to produce a bicep pump and build the mind muscle connection.\nWith that said, the slow tempo typically used during the concentration curl is great for building the biceps and since it is an unilateral exercise, it helps work each bicep equally.",
+            "link":"https://www.muscleandstrength.com/exercises/concentration-cur.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Standing Hammer Curl",
+            "desc":"The hammer curl is a great exercise for the biceps and forearms. Set up by grasping a set of dumbbells and standing straight up with the dumbbells by your sides.\nYou should be using a neutral grip, meaning your palms are facing your body.\nBend your arms slightly to take tension into the biceps.",
+            "link":"https://www.muscleandstrength.com/exercises/standing-hammer-curl.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Cable Curl",
+            "desc":"Set up for the cable curl by attaching a straight bar to the low pulley cable and selecting the weight you want to use on the stack.\nStand facing the cable machine with your legs shoulder width apart.\nGrasp the bar with an underhand grip (palms facing up), and your hands about shoulder width apart.\nKeeping your elbows tucked in by your sides, slowly curl the bar up as far as possible.\nSqueeze the biceps at the top of the movement, and then slowly lower it back to starting position.\nDo not pause, but go straight into the next rep!",
+            "link":"https://www.muscleandstrength.com/exercises/cable-curl.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"EZ Bar Skullcrusher",
+            "desc":"The EZ bar skullcrusher is a variation of the skullcrusher and an exercise used to strengthen the muscles of the triceps.\nThe triceps can be trained in many different ways to promote growth and overhead extensions, such as the EZ bar skullcrusher, are an effective way to target the long head of the tricep.\nHaving bigger and stronger triceps are not only important from an aesthetic standpoint but can also help contribute to better performance on pressing motions such as the bench press.",
+            "link":"https://www.muscleandstrength.com/exercises/ez-bar-skullcrusher.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Alternating Standing Dumbbell Curl",
+            "desc":"The standing dumbbell curl is a good way to correct any strength and size imbalances in the biceps as it works each muscle individually. Set up for the exercise by grasping a set of dumbbells and standing straight up with the dumbbells by your side.\nYour palms should be facing up, and the dumbbells not touching your body.\nBefore starting the set, take up the slack by lifting up the weight slightly so the tension is on your bicep muscles.\nStarting with your weakest arm (usually the left), curl the dumbbell up as far as possible.\nSqueeze the bicep at the top of the exercise, and then slowly lower the weight down without it touching your body or taking the tension off your bicep.\nRepeat for the other arm.\nThat's one rep. Now repeat for the desired amount of reps to complete the set.",
+            "link":"https://www.muscleandstrength.com/exercises/alternating-standing-dumbbell-curl.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
         }
     ],
     "triceps": [
         {
-            "name":"Cable Pull",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
+            "name":"Straight Bar Tricep Extension",
+            "desc":"The straight bar tricep extension is a variation of the cable tricep extension and an exercise used to build the muscles of the triceps.\nWell-built triceps also have a lot of positive carryover into your pressing movements such as bench press variations and shoulder press variations.\nThe straight bar tricep extension can be included in your tricep workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/tricep-extension.html",
+            "reps":"10 10 10",
             "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
-            "intensity": 3
+            "gender":["male", "female"],
+            "intensity":1
         },
         {
-            "name":"Skull Crusher",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
+            "name":"Tricep Dips",
+            "desc":"Many people don't know that there are two ways to do dips - focusing on your triceps, or focusing on your chest. This version of the dip hits the triceps hardest.\nGrab the parallel dip bars with an inward grip\nIf the bars are adjustable, adjust them to around shoulder-width apart.\nJump up off the floor and take your weight on the bars.\nThe key to hitting your triceps on this version of the dip is to keep your body as straight as possible and don't lean forward. This may mean not crossing your legs and keeping them hanging down.\nSlowly lower yourself down, keeping your eyes facing forward.\nLower until your elbow is at around the same height as your shoulder, and then raise your body back up without locking your arms at the top of the movement.\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/tricep-dip.html",
+            "reps":"10 10 10",
             "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
-            "intensity": 3
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Bench Dip",
+            "desc":"Set up for the bench dip by placing 2 flat benches parallel to one another to around 4-5 feet apart (you may need to adjust the width to suit your height).\nPut your heels on the edge of one bench around shoulder-width apart.\nPlace your hands on the edge of the other bench. This is the starting position for the exercise.\nKeeping your body close to the bench, slowly dip down until your elbows are at the same height as your shoulders.\nSlowly push back up, squeezing through the triceps.\nDo not lock the elbows out at the top of the exercise, and repeat.",
+            "link":"https://www.muscleandstrength.com/exercises/tricep-bench-dip.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Close Grip Bench Press",
+            "desc":"The close grip bench press is a variation of the bench press and an exercise used to build muscle and strength in the triceps. The movement will also indirectly target the muscles of the chest and shoulders.\nThe close grip bench press is a superior movement when we’re talking about exercises that will pack mass onto your triceps. That said, use of close grips can provide some shoulder and elbow discomfort for some.\nThis exercise can be included in your tricep workouts, push workouts, upper body workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/close-grip-bench-press.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Weighted Tricep Dips",
+            "desc":"The weighted tricep dip is a variation of the tricep dip and an exercise used to build the muscles of the triceps, shoulders, and chest.\nAdding weight to a dip belt is an excellent way to progress from the bodyweight variation of the tricep dip and will ensure you are continuously getting stronger and building muscle from performing the lift.\nWeighted tricep dips can be added in your arm workouts, upper body workouts, push workouts, or full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/weighted-tricep-dips.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Rope Tricep Extension",
+            "desc":"The rope tricep extension is a variation of the cable tricep extension and an exercise used to build the muscles of the triceps.\nWell-built triceps also have a lot of positive carryover into your pressing movements such as bench press variations and shoulder press variations.\nThe rope tricep extension can be included in your tricep workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/rope-tricep-extension.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Lying Barbell Tricep Extension (Skull Crusher)",
+            "desc":"Sit on the end of a flat bench with a barbell on your thighs.\nGrip the barbell with an overhand grip (palms facing down) with your hands about shoulder-width apart.\nBring the bar up to your chest and lay down on your back. Extend your arms straight up above your chest.\nKeeping your elbows fixed in place and not pointing out, slowly lower the bar until it is about an inch from your forehead (hence the name skullcrusher!).\nPause, and then slowly extend your arms back to the starting position.\nDo not lock your elbows out, and then repeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/lying-tricep-extension.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
+        },
+        {
+            "name":"Standing Low Pulley Overhead Tricep Extension (Rope Extension)",
+            "desc":"Set up for the exercise by attaching a rope to the low pulley of a pulley cable machine and selecting the weight you want to use on the stack.\nFacing away from the pulley, grab the rope behind your neck with a neutral grip (palms facing in) keeping your hands close together as stand straight up with a slight bend in your knees. This will lift the weight slightly from the stack.\nKeep your feet around shoulder width apart. Your forearms arms should be parallel to the floor at this point and your elbows should be pointed at the ceiling.\nYou should be grasping the rope behind your head. You are now in the starting position.\nMoving only at your elbow joints slowly push the rope straight up until your arms are fully extended. As you push, spread the rope out until your hands are around shoulder width apart at the peak of the movement.\nPause, and then slowly bring the rope back to the starting position allowing your hands to reunite.\nRepeat this movement for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/standing-low-pulley-overhead-tricep-extension-%28rope-extension%29.html",
+            "reps":"10 10 10",
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity":1
         }
     ],
     "abs": [
         {
-            "name":"Dragon Fly",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
-            "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
-            "intensity": 3
+          "name":"Plank",
+          "desc":"The plank (AKA hover) is an excellent exercise for building overall core strength. The video above demonstrates the most common plank variation. If you're new to training and do not have the core strength to do a full plank you can start with your knees on the floor and work up to knees off the floor as you get stronger.\nYou can make the plank harder by raising one foot of the floor. If that's still easy for you, raise one foot off the floor and the opposing hand at the same time. If you're in the gym you can also try weighted planks by adding weight plates to your back for additional resistence. Just make sure you do not let your midsection sag throughout the exercise.", 
+          "link":"https://www.muscleandstrength.com/exercises/hover.html",
+          "reps":"30-60sec * 2",
+          "goal": ["muscle", "healthy","fat"],
+          "gender":["male","female"],
+          "intensity":2 
         },
-        {
-            "name":"Leg Raise",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
-            "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
-            "intensity": 3
+        { 
+          "name":"Ab Crunch",
+          "desc":"The abdominal crunch, or ab crunch, is a flexion based abdominal exercise. It is a very common movement that even the newest of beginner lifters have probably tried before.\nMost ab workouts include the ab crunch as it is thought to be one of the best core building exercises. However, instead of performing marathon sets of ab crunches, it is best to pair it with other ab movements such as the plank and hanging leg raise to get a complete ab workout.\nThe ab crunch replaced the sit up as the corner stone ab exercise. This is because people believed the sit up involved too much flexion which lends itself to lower back pain. Thus, it was replaced by the ab crunch, which accomplished the same movement pattern without overextending the spine.", 
+          "link":"https://www.muscleandstrength.com/exercises/ab-crunch",
+          "reps":"15 15",
+          "goal": ["muscle", "healthy", "fat"],
+          "gender":["male","female"],
+          "intensity": 1
+        },
+        { 
+          "name":"Lying Floor Leg Raise",
+          "desc":"The lying floor leg raise is a variation of the abdominal crunch and an exercise used to isolate the muscles of the abdomen.\nThe lying floor leg raise is a flexion based exercise which keeps the lower abdominal muscles under constant tension during the entire range of motion.", 
+          "link":"https://www.muscleandstrength.com/exercises/lying-floor-leg-raise.html",
+          "reps":"10 10",
+          "goal": ["muscle", "healthy", "fat"],
+          "gender":["male", "female"],
+          "intensity": 1
+        },
+        { 
+          "name":"Side Crunch With Leg Lift",
+          "desc":"The side crunch with leg lift is a great exercise for hitting the abs and obliques. Grab a mat and lay down on your left side. Your legs should be straight and together. Your left arm should go across your stomach and your hand touching the area you're going to work. Your right arm should be touching the right side of your head (not holding your head, only touch with your finger tips). In one motion, lift your right leg up and crunch into your right side. Pause, then lower back to the starting position. Repeat for desired reps and them do the same for your other side.", 
+          "link":"https://www.muscleandstrength.com/exercises/side-crunch-with-leg-lift.html",
+          "reps":"10 10",
+          "goal": ["muscle", "healthy", "fat"],
+          "gender":["male", "female"],
+          "intensity": 1
+        },
+        { 
+          "name":"Side Crunch",
+          "desc":"Lay supine in a relaxed position with your knees stacked to one side. Place your contralateral hand behind your head for support and use your free hand to palpate your abdominals. Initiate the movement by squeezing your abs to raise your torso off the floor, slowly lower yourself back to the starting position and complete the assigned number of repetitions. Repeat on the opposite side.", 
+          "link":"https://www.muscleandstrength.com/exercises/side-crunch.html",
+          "reps":"10 10",
+          "goal": ["muscle", "fat"],
+          "gender":["male", "female"],
+          "intensity": 1
+        },
+        { 
+          "name":"Abdominal Air Bike",
+          "desc":"The abdominal air bike is probably the most feared abdominal movement from anyone who’s performed an at-home ab workout video. The bicycle exercise targets the whole abdomen and places constant tension on the mid-section as you go through the motions on both sides. This exercise is an advanced variation of a crunch.", 
+          "link":"https://www.muscleandstrength.com/exercises/abdominal-air-bike.html",
+          "reps":"40 sec * 2",
+          "goal": ["muscle", "fat"],
+          "gender":["male", "female"],
+          "intensity": 1
+        },
+        { 
+          "name":"Rotating Mountain Climber",
+          "desc":"The rotating mountain climber is a variation of the mountain climber and an exercise used to target the muscles of the core. The rotating mountain climber stems from the plank exercise family tree and works the core through stability (maintaining a neutral spine) and flexion (driving the knee towards the elbow). The rotating mountain climber will incorporate the obliques to a greater extent than the traditional variation of the exercise.", 
+          "link":"https://www.muscleandstrength.com/exercises/rotating-mountain-climber",
+          "reps":"40 sec * 2",
+          "goal": ["muscle", "fat"],
+          "gender":["male", "female"],
+          "intensity": 1
+        },
+        {  
+          "name":"Sit Up",
+          "desc":"The sit up is a classic abdominal exercise. It’s rarely performed anymore, however, it’s still a very effective flexion based exercise for those looking to utilize it to target their core.", 
+          "link":"https://www.muscleandstrength.com/exercises/sit-up.html",
+          "reps":"40 sec * 2",
+          "goal": ["muscle", "fat"],
+          "gender":["male", "female"],
+          "intensity": 2
+        },
+        { 
+          "name":"Lying Alternate Floor Leg Raise",
+          "desc":"Set up for the lying floor leg raise by putting a mat on the floor and laying down on your back with your legs extended straight out and your arms by your side with palms on the floor. Get ready to start the set by lifting your heels off the floor slightly. Keeping your right leg straight out in front of you off the floor, raise your left leg slowly up to 90 degrees. Slowly lower your left leg back to the starting position without touching the floor and repeat the movement with your right leg.", 
+          "link":"https://www.muscleandstrength.com/exercises/lying-alternate-floor-leg-raise.html",
+          "reps":"40 sec * 2",
+          "goal": ["muscle", "fat"],
+          "gender":["male", "female"],
+          "intensity": 1
+        },
+        {  
+          "name":"Side Plank",
+          "desc":"The side plank is a great exercise for building core strength, and more specifically oblique strength. It's also a good balance exercise. It's your choice whether to use a mat in this exercise. Start by laying on your side with one hand on the floor and your feet on top of one another. If you prefer, you can rest on your elbow instead of your hand. Lift your hips up until your body is exactly straight. Now hold this position for as long as possible. You should feel this exercise in your abs and obliques. Complete the same for the opposite side of the body.", 
+          "link":"https://www.muscleandstrength.com/exercises/side-hover.html",
+          "reps":"50 sec * 2",
+          "goal": ["muscle", "healthy", "fat"],
+          "gender":["male", "female"],
+          "intensity": 1
         }
     ],
     "cardio": [
         {
-            "name":"Running Machine",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
-            "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
-            "intensity": 3
+            "name":"Burpees",
+            "desc":"Drop down into a squat position. Place the hands on the floor. Kick the legs back behind you so that you end up in a push-up position. Perform a pushup. Bring the knees back in. Return to the standing position and jump in one motion. Repeat until time expires.", 
+            "link":"https://www.muscleandstrength.com/workouts/20-minute-hiit-workout",
+            "reps":"20-30sec * 2",
+            "goal": ["healthy","far"],
+            "gender":["male","female"],
+            "intensity":2
         },
         {
-            "name":"Running",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
-            "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
-            "intensity": 3
-        }
+            "name":"Running in Place",
+            "desc":"I don’t think you need instructions on running in place, do you? Good. Let’s move on.", 
+            "link":"https://www.muscleandstrength.com/workouts/20-minute-hiit-workout",
+            "reps":"10 min * 2",
+            "goal": ["healthy","far"],
+            "gender":["male","female"],
+            "intensity":1
+        },
+        {
+            "name":"Jumping rope",
+            "desc":"I don’t think you need instructions on running in place, do you? Good. Let’s move on.", 
+            "link":"https://www.military.com/military-fitness/workouts/do-you-jump-rope-workout-for-beginning-jumpers",
+            "reps":"25 jumps, 30sec rest",
+            "goal": ["healthy","far"],
+            "gender":["male","female"],
+            "intensity":1
+        },
+        {
+            "name":"Alternating Wide Circles",
+            "desc":"The wide circle motion in this full-body move puts extra emphasis on your back and grip strength, says Adams. Make the circles as big as you can, using your legs only if you need to. “I recommend keeping as much momentum going throughout the exercise as possible, because the more you slow down, the heavier those ropes will feel and the harder it will be to get those ropes moving again,” Adams says.", 
+            "link":"https://dailyburn.com/life/fitness/battle-rope-exercises-full-body-workout/",
+            "reps":"30sec * 3",
+            "goal": ["healthy","far"],
+            "gender":["male","female"],
+            "intensity":2
+        },
+        {
+            "name":"Bike Ride",
+            "desc":"I don’t think you need instructions on running in place, do you? Good. Let’s move on.", 
+            "link":"https://www.coachmag.co.uk/equipment/exercise-bike/4109/stationary-bike-workouts",
+            "reps":"10 min * 2",
+            "goal": ["healthy","far"],
+            "gender":["male","female"],
+            "intensity":1
+        },
+        {
+            "name":"Jumping Jacks",
+            "desc":"Another cardio workout at home that might bring you back to your childhood is jumping jacks. Similar to burpees, doing jumping jacks for 10 minutes straight can burn around 100 calories. You can easily integrate jumping jacks into a circuit training that includes some of the other exercises on this page, such as burpees, jumping rope and squat jumps. With no equipment necessary, you can perform jumping jacks anywhere at any time.", 
+            "link":"https://meritagemed.com/8-best-cardio-workouts/",
+            "reps":"20-30sec * 2",
+            "goal": ["healthy","far"],
+            "gender":["male","female"],
+            "intensity":1
+        }        
     ]
 }

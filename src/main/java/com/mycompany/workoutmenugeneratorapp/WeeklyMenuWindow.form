@@ -273,7 +273,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JList" name="mondayList1">
+        <Component class="javax.swing.JList" name="mondayList">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="14" style="0"/>
@@ -413,6 +413,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Menu Detail"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="detailBtnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="dailyMenuBtn1">
       <Properties>

@@ -9,15 +9,37 @@ package com.mycompany.workoutmenugeneratorapp;
  * @author eitanaka
  */
 public class LogInWindow extends javax.swing.JFrame {    
-    public LogInWindow logInWind;    
-    private UserInformationWindow userInfoWin;            
+    public LogInWindow logInWin;    
+    public UserInformationWindow userInfoWin; 
+    
+    // Test
+    public WeeklyMenuWindow weeklyMenuWin;
+    public DailyMenuWindow dailyMenuWin;
     /**
      * Creates new form LogInWindow
      */
     public LogInWindow() {
-        initComponents();         
+        initComponents();    
+        // test               
         userInfoWin = new UserInformationWindow();
-        userInfoWin.setLogInWindow(this);        
+        // test
+        weeklyMenuWin = new WeeklyMenuWindow();
+        dailyMenuWin = new DailyMenuWindow();
+        
+        userInfoWin.setLogInWindow(this);  
+        // test
+        userInfoWin.setWeeklyMenuWindow(this.weeklyMenuWin);
+        userInfoWin.setDailyMenuWindow(this.dailyMenuWin);
+        
+        // test        
+        weeklyMenuWin.setUserInfoWindow(this.userInfoWin);
+        weeklyMenuWin.setLogInWindow(this);
+        weeklyMenuWin.setDailyMenuWindow(this.dailyMenuWin);
+        
+        // test        
+        dailyMenuWin.setLogInWindow(this);
+        dailyMenuWin.setWeeklyMenuWindow(this.weeklyMenuWin); 
+        dailyMenuWin.setUserMenuWindow(this.userInfoWin);
     }
 
     /**

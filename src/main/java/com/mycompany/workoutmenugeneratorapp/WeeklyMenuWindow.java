@@ -4,24 +4,49 @@
  */
 package com.mycompany.workoutmenugeneratorapp;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author eitanaka
  */
 public class WeeklyMenuWindow extends javax.swing.JFrame {
-    public WeeklyMenuWindow weeklyMenu;  
     private LogInWindow logInWin;
-    private UserInformationWindow userInfoWin;
-    private DailyMenuWindow dailyMenuWin;    
-    
+    private UserInformationWindow userInfoWin;            
+    private DailyMenuWindow dailyMenuWin;  
+    private ArrayList<ArrayList<WorkoutMenuItem>> weeklyMenu;    
+//    
+//    public static class MyListModel extends javax.swing.AbstractListModel<String> {
+//        ArrayList<WorkoutMenuItem> menus = new ArrayList();
+//
+//        @Override
+//        public int getSize() {
+//            return menus.size();
+//        }
+//        @Override
+//        public String getElementAt(int index) {
+//            return menus.get(index).getName();
+//        }
+//        public void addElement(WorkoutMenuItem menu) {
+//            menus.add(menu);
+//            fireContentsChanged(this, menus.size()-1, menus.size()-1);
+//        }
+//        public String getShortInfo(int i) {
+//            return menus.get(i).getDesc();
+//        }                     
+//    }    
     /**
      * Creates new form WeeklyMenuWindwo
      */
     public WeeklyMenuWindow() {
-        initComponents();
-        dailyMenuWin = new DailyMenuWindow();        
-        dailyMenuWin.setWeeklyMenuWindow(this); 
-        dailyMenuWin.setLogInWindow(this.logInWin);
+        initComponents(); 
+//        sundayList.setModel(sundayModel);
+//        mondayList.setModel(mondayModel);
+//        tuesdayList.setModel(tuesdayModel);
+//        wednesdayList.setModel(wednesdayModel);
+//        thursdayList.setModel(thursdayModel);
+//        fridayList.setModel(fridayModel);
+//        saturdayList.setModel(saturdayModel);
     }
 
     /**
@@ -47,7 +72,7 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         tuesdayList = new javax.swing.JList<>();
         jScrollPane3 = new javax.swing.JScrollPane();
-        mondayList1 = new javax.swing.JList<>();
+        mondayList = new javax.swing.JList<>();
         jScrollPane4 = new javax.swing.JScrollPane();
         wednesdayList = new javax.swing.JList<>();
         jScrollPane5 = new javax.swing.JScrollPane();
@@ -117,13 +142,13 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(tuesdayList);
 
-        mondayList1.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        mondayList1.setModel(new javax.swing.AbstractListModel<String>() {
+        mondayList.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        mondayList.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane3.setViewportView(mondayList1);
+        jScrollPane3.setViewportView(mondayList);
 
         wednesdayList.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
         wednesdayList.setModel(new javax.swing.AbstractListModel<String>() {
@@ -159,6 +184,11 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
 
         detailBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         detailBtn.setText("Menu Detail");
+        detailBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                detailBtnActionPerformed(evt);
+            }
+        });
 
         dailyMenuBtn1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         dailyMenuBtn1.setText("Daily Menu");
@@ -267,6 +297,7 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void dailyMenuBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dailyMenuBtn1ActionPerformed
+        dailyMenuWin.displayMenu();
         this.setVisible(false);
         dailyMenuWin.setVisible(true);
     }//GEN-LAST:event_dailyMenuBtn1ActionPerformed
@@ -276,13 +307,26 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
         logInWin.setVisible(true);
     }//GEN-LAST:event_logOutBtnActionPerformed
 
-    public void setUserInfoWindow(UserInformationWindow myCreater) {
-        userInfoWin = myCreater;
+    private void detailBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detailBtnActionPerformed
+        // TODO add your handling code here:
+        System.out.println(weeklyMenu.get(0).get(0).getName());
+    }//GEN-LAST:event_detailBtnActionPerformed
+
+    // Connect Each Window
+    public void setUserInfoWindow(UserInformationWindow userInfoWin) {
+        this.userInfoWin = userInfoWin;
+    }             
+    public void setLogInWindow(LogInWindow logInWin) {
+        this.logInWin = logInWin;
     }        
-    
-    public void setLogInWindow(LogInWindow myCreater) {
-        logInWin = myCreater;
+    public void setDailyMenuWindow(DailyMenuWindow dailyWin) {
+        this.dailyMenuWin = dailyWin;
     }
+    
+    public void setWeeklyMenu(ArrayList<ArrayList<WorkoutMenuItem>> weeklyMenu){
+        this.weeklyMenu = weeklyMenu;
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton dailyMenuBtn1;
     private javax.swing.JButton detailBtn;
@@ -297,7 +341,7 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JButton logOutBtn;
     private javax.swing.JLabel mondayLabel;
-    private javax.swing.JList<String> mondayList1;
+    private javax.swing.JList<String> mondayList;
     private javax.swing.JLabel saturdayLabel;
     private javax.swing.JList<String> saturdayList;
     private javax.swing.JLabel sundayLabel;

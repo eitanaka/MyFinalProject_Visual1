@@ -24,6 +24,16 @@ public class WorkoutMenuItem {
     public WorkoutMenuItem() {
 
     }
+    
+    public WorkoutMenuItem(String name, String desc, String link, String reps, String[] goal, String[] gender, int intensity) {
+        this.name = name;
+        this.desc = desc;
+        this.link = link;
+        this.reps = reps;
+        this.goal = goal;
+        this.gender = gender;
+        this.intensity = intensity;
+    }
 
     public String getName() {
         return this.name;

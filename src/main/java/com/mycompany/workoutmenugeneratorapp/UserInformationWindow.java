@@ -15,17 +15,15 @@ import javax.swing.JOptionPane;
  * @author eitanaka
  */
 public class UserInformationWindow extends javax.swing.JFrame {
-   public UserInformationWindow userInfoWin;
    private LogInWindow logInWin;
-   private WeeklyMenuWindow weeklyMenuWin;      
+   private WeeklyMenuWindow weeklyMenuWin;    
+   private DailyMenuWindow dailyMenuWin;
+   private ArrayList<ArrayList<WorkoutMenuItem>> weeklyMenu;  
     /**
      * Creates new form UserInformationWindow
      */
     public UserInformationWindow() {
-        initComponents();
-        weeklyMenuWin = new WeeklyMenuWindow();        
-        weeklyMenuWin.setUserInfoWindow(this);
-        weeklyMenuWin.setLogInWindow(this.logInWin);
+        initComponents();                 
     }        
 
     /**
@@ -405,10 +403,12 @@ public class UserInformationWindow extends javax.swing.JFrame {
         String userGoal;
         String userGender;
         
-        // ArrayList weekly menu contains each daily menu and ArrayList sunday ~ saturday contains daily menu
-        ArrayList<ArrayList<WorkoutMenuItem>> weeklyMenu = new ArrayList<>();                
-        ArrayList<ArrayList<WorkoutMenuItem>> tmpMenuList = new ArrayList<>();                
+        // ArrayList weekly menu contains each daily menu and ArrayList sunday ~ saturday contains daily menu        
+        ArrayList<ArrayList<WorkoutMenuItem>> tmpMenuList = new ArrayList<>(); 
+        weeklyMenu = new ArrayList<>();
         boolean[] selectedDate = new boolean[7];
+        
+        ArrayList<WorkoutMenuItem> restList = new ArrayList<>();                        
                      
         // This variable contains all workout menu
         WorkoutMenu workoutMenu = new WorkoutMenu();
@@ -559,15 +559,16 @@ public class UserInformationWindow extends javax.swing.JFrame {
                 weeklyMenu.add(tmpMenuList.get(menuCounter));
                 menuCounter++;
             } else {
-                weeklyMenu.add(null);
+                weeklyMenu.add(restList);
             }           
         }
         
         // Step 6: Share weeklyMenu arrayList to the other windows
-        // Fin.
+        // Fin.        
+        this.weeklyMenuWin.setWeeklyMenu(weeklyMenu);
+        this.dailyMenuWin.setWeeklyMenu(weeklyMenu);
         this.setVisible(false);
-        weeklyMenuWin.setVisible(true);
-        
+        this.weeklyMenuWin.setVisible(true);        
         
         // Test
         for (int i = 0; i < 7; i++) {
@@ -645,10 +646,20 @@ public class UserInformationWindow extends javax.swing.JFrame {
         logInWin.setVisible(true);
     }//GEN-LAST:event_logOutBtnActionPerformed
 
+    public ArrayList<ArrayList<WorkoutMenuItem>> getWeeklyMenuList() {
+        return this.weeklyMenu;
+    }
+            
+    // Connect Each Window
     public void setLogInWindow(LogInWindow myCreater) {
         logInWin = myCreater;        
+    }      
+    public void setWeeklyMenuWindow(WeeklyMenuWindow weeklyMenuWin){
+        this.weeklyMenuWin = weeklyMenuWin;
+    }        
+    public void setDailyMenuWindow(DailyMenuWindow dailyMenuWin) {
+        this.dailyMenuWin = dailyMenuWin;
     }    
-    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField ageField;
     private javax.swing.JLabel ageLabel;

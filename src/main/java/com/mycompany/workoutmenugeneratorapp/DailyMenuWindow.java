@@ -4,6 +4,10 @@
  */
 package com.mycompany.workoutmenugeneratorapp;
 
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Calendar;
+
 /**
  *
  * @author eitanaka
@@ -12,6 +16,9 @@ public class DailyMenuWindow extends javax.swing.JFrame {
     
     private WeeklyMenuWindow weeklyMenuWin;    
     private LogInWindow logInWin;
+    private UserInformationWindow userInfoWin;
+    
+    private ArrayList<ArrayList<WorkoutMenuItem>> weeklyMenu;
             
     /**
      * Creates new form DailyMenuWindow
@@ -36,8 +43,8 @@ public class DailyMenuWindow extends javax.swing.JFrame {
         dailyMenuList = new javax.swing.JList<>();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        videoLabel = new javax.swing.JLabel();
+        instructionField = new javax.swing.JTextArea();
+        instructionLabel = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
         menuDetailBtn = new javax.swing.JButton();
@@ -71,12 +78,12 @@ public class DailyMenuWindow extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Instruction:");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane2.setViewportView(jTextArea1);
+        instructionField.setColumns(20);
+        instructionField.setRows(5);
+        jScrollPane2.setViewportView(instructionField);
 
-        videoLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        videoLabel.setText("Video URL:");
+        instructionLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
+        instructionLabel.setText("Instructions URL:");
 
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
@@ -84,6 +91,11 @@ public class DailyMenuWindow extends javax.swing.JFrame {
 
         menuDetailBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         menuDetailBtn.setText("More Menu Detail");
+        menuDetailBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuDetailBtnActionPerformed(evt);
+            }
+        });
 
         weeklyBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         weeklyBtn.setText("Weekly Menu");
@@ -126,7 +138,7 @@ public class DailyMenuWindow extends javax.swing.JFrame {
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 500, Short.MAX_VALUE)
-                                        .addComponent(videoLabel)
+                                        .addComponent(instructionLabel)
                                         .addComponent(jScrollPane3)
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(repsLabel)
@@ -170,7 +182,7 @@ public class DailyMenuWindow extends javax.swing.JFrame {
                             .addComponent(repsLabel)
                             .addComponent(repsField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(videoLabel)
+                        .addComponent(instructionLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
@@ -195,21 +207,53 @@ public class DailyMenuWindow extends javax.swing.JFrame {
         logInWin.setVisible(true);
     }//GEN-LAST:event_logOutBtnActionPerformed
 
-    public void setWeeklyMenuWindow(WeeklyMenuWindow myCreater) {
-        weeklyMenuWin = myCreater;
+    private void menuDetailBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDetailBtnActionPerformed
+        // Test
+        this.displayMenu();
+    }//GEN-LAST:event_menuDetailBtnActionPerformed
+
+    public void displayMenu() {
+        Calendar calendar = Calendar.getInstance();       
+        int day = calendar.get(Calendar.DAY_OF_WEEK);               
+        
+        /*
+        if (day == 1) then show Sunday's menu              
+        if (day == 2) then show Monday's menu
+        if (day == 3) then show Tuesday's menu
+        if (day == 4) then show Wednesday's menu
+        if (day == 5) then show Thursday's menu
+        if (day == 6) then show Friday's menu
+        if (day == 7) then show Saturday's menu
+        */
+        
+        // instructionField.setText(weeklyMenu.get(0).get(?).getDesc());
+        // repsField.setText(weeklyMenu.get(0).get(?).getReps());
+        // urlField.setText(weeklyMenu.get(0).get(?).getLink());
     }
     
-    public void setLogInWindow(LogInWindow myCreater) {
-        logInWin = myCreater;
-    }                
+    public void setWeeklyMenu(ArrayList<ArrayList<WorkoutMenuItem>> weeklyMenu){
+        this.weeklyMenu = weeklyMenu;
+    }
+        
+    // Connect Each Window
+    public void setWeeklyMenuWindow(WeeklyMenuWindow weeklyMenuWin) {
+        this.weeklyMenuWin = weeklyMenuWin;
+    }           
+    public void setLogInWindow(LogInWindow logInWin) {
+        this.logInWin =  logInWin;
+    }         
+    public void setUserMenuWindow(UserInformationWindow userInfoWin) {
+        this.userInfoWin = userInfoWin;
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel dailyMenuLabel;
     private javax.swing.JList<String> dailyMenuList;
+    private javax.swing.JTextArea instructionField;
+    private javax.swing.JLabel instructionLabel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JButton logOutBtn;
     private javax.swing.JButton menuDetailBtn;
@@ -217,7 +261,6 @@ public class DailyMenuWindow extends javax.swing.JFrame {
     private javax.swing.JTextField repsField;
     private javax.swing.JLabel repsLabel;
     private javax.swing.JLabel titleLabel;
-    private javax.swing.JLabel videoLabel;
     private javax.swing.JButton weeklyBtn;
     // End of variables declaration//GEN-END:variables
 }
