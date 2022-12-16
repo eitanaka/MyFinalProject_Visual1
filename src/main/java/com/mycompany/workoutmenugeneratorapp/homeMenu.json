@@ -201,8 +201,8 @@
             "desc":"The squat is the king of all exercises, working over 256 muscles in one movement! From bodybuilders to powerlifters to competitive athletes, the squat is a staple compound exercise and should be in every workout plan.\nFor powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, having an explosive squat is a good indicator for on field/court performance. And for bodybuilders, the squat is a compound exercise that targets nearly every muscle of your lower body and core.", 
             "link":"https://www.muscleandstrength.com/exercises/squat.html",
             "reps":"10 8 8 6",
-            "goal": ["muscle", "fat"],
-            "gender":["male"],
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
             "intensity": 3
         },
         { 
@@ -210,7 +210,7 @@
             "desc":"The seated leg extension is an isolation exercise and one used to target the muscles of the quads.\nThis exercise can be particularly hard on the knees. So, for those with prior knee issues, it may be beneficial to stick with other movements, preferably compound, to target your quads.\nThe leg extension is a great exercise for quad development and may be beneficial to include in your workout routines if your goals are more aesthetics-driven.",
             "link":"https://www.muscleandstrength.com/exercises/leg-extension.html",
             "reps":"12 12 12",
-            "goal": ["muscle", "healthy"],
+            "goal":["muscle", "healthy", "fat"],
             "gender":["male", "female"],
             "intensity": 2
         },
@@ -219,7 +219,7 @@
             "desc":"1. The lying leg curl is a great exercise to isolate the hamstrings. Set up for the leg curl by selecting the weight you want to use on the stack and adjusting the padding to suit your leg length. Lay face down on the machine. The padding should be positioned just above the back of your ankles. If it's higher than that, adjust the length. Tense up the hamstrings by taking the weight slightly off the stack. This is the starting position for the exercise. Squeeze the hamstrings and curl the weight up as far as possible. Squeeze the hamstring hard, and then slowly lower the weight back to the starting position. Repeat for desired reps.",
             "link":"https://www.muscleandstrength.com/exercises/leg-curl.html",
             "reps":"12 12 12",
-            "goal": ["muscle", "healthy"],
+            "goal":["muscle", "healthy", "fat"],
             "gender":["male", "female"],
             "intensity": 2
         },
@@ -228,8 +228,8 @@
             "desc":"Set up for the standing barbell calf raise by getting a block or step and placing it in front of you. Grasp a barbell and place it across the back of your shoulders. Make sure the bar sits across the muscles in your upper back, not your neck. Stand up on the block with the balls of your feet on the edge. Keeping your balance, raise your heels off the floor. Squeeze the calves, and then slowly lower your heals back down as far as possible without letting them touch the floor. Repeat for desired reps.",
             "link":"https://www.muscleandstrength.com/exercises/standing-calf-raise.html",
             "reps":"12 12",
-            "goal": ["muscle", "healthy", "fat"],
-            "gender":["male"],
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
             "intensity":1
         },
         { 
@@ -237,8 +237,8 @@
             "desc":"The seated calf raise is a variation of the machine calf raise and an exercise used to isolate the muscles of the calves.\nThe calves can be a stubborn muscle group for a lot of people, so it’s important to experiment with several different angles when performing calf raises. You may also want to consider training the calves with a high training frequency.\nThe seated calf raise can be incorporated into your leg workouts and full body workouts.",
             "link":"https://www.muscleandstrength.com/exercises/seated-calf-raise.html",
             "reps":"12 12",
-            "goal": ["muscle", "healthy"],
-            "gender":["male"],
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
             "intensity":1
         },
         { 
@@ -246,8 +246,8 @@
             "desc":"The deadlift is an extremely popular exercise and a true test of total body strength. It is popular across numerous weight lifting circle including bodybuilders, powerlifts, and Crossfit athletes. The deadlift focuses on lifting dead weight off the ground to hip level without using momentum to assist the weight on its path up. It is known as one of the “big three” exercises for powerlifters which includes squats, bench press, and the deadlift. Bodybuilders use the deadlift to promote muscle growth in their entire posterior chain (muscles on the back of the body). The deadlift primarily works the muscles of the hamstrings. However, it is a complete compound exercise and also requires muscle activation from the back, glutes, hamstrings, arms, and core.",
             "link":"https://www.muscleandstrength.com/exercises/deadlifts.html",
             "reps":"12 10 12",
-            "goal": ["muscle"],
-            "gender":["male"],
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
             "intensity":3
         },
         { 
@@ -264,8 +264,8 @@
             "desc":"The front squat is a variation of the squat and an exercise used to build the muscles of the legs. In particular, the front squat will place a lot of emphasis on the quads.\nThe squat movement pattern is a foundational movement and should be performed by most capable individuals throughout their lives. So, it is important to find a variation that is comfortable for you to perform, and continuously work on it.",
             "link":"https://www.muscleandstrength.com/exercises/front-squat.html",
             "reps":"12 10 12",
-            "goal": ["muscle"],
-            "gender":["male"],
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
             "intensity":2
         },
          { 
@@ -291,7 +291,7 @@
             "desc":"The kettlebell swing is a total body movement that primarily works the muscles of the posterior chain, emphasizing the hamstring complex.\nThe kettlebell swing is an excellent starting point for those learning the hip hinge movement pattern. From there one can progress to more advanced hip hinges such as the deadlift.\nRegardless, the kettlebell swing is a great exercise to incorporate into your workout program for general health purposes.",
             "link":"https://www.muscleandstrength.com/exercises/kettlebell-swing",
             "reps":"10 10 10",
-            "goal": ["healthy", "fat"],
+            "goal":["muscle", "healthy", "fat"],
             "gender":["male", "female"],
             "intensity":1
         }
@@ -486,7 +486,7 @@
           "desc":"Lay supine in a relaxed position with your knees stacked to one side. Place your contralateral hand behind your head for support and use your free hand to palpate your abdominals. Initiate the movement by squeezing your abs to raise your torso off the floor, slowly lower yourself back to the starting position and complete the assigned number of repetitions. Repeat on the opposite side.", 
           "link":"https://www.muscleandstrength.com/exercises/side-crunch.html",
           "reps":"10 10",
-          "goal": ["muscle", "fat"],
+          "goal":["muscle", "healthy", "fat"],
           "gender":["male", "female"],
           "intensity": 1
         },
@@ -495,7 +495,7 @@
           "desc":"The abdominal air bike is probably the most feared abdominal movement from anyone who’s performed an at-home ab workout video. The bicycle exercise targets the whole abdomen and places constant tension on the mid-section as you go through the motions on both sides. This exercise is an advanced variation of a crunch.", 
           "link":"https://www.muscleandstrength.com/exercises/abdominal-air-bike.html",
           "reps":"40 sec * 2",
-          "goal": ["muscle", "fat"],
+          "goal":["muscle", "healthy", "fat"],
           "gender":["male", "female"],
           "intensity": 1
         },
@@ -504,7 +504,7 @@
           "desc":"The rotating mountain climber is a variation of the mountain climber and an exercise used to target the muscles of the core. The rotating mountain climber stems from the plank exercise family tree and works the core through stability (maintaining a neutral spine) and flexion (driving the knee towards the elbow). The rotating mountain climber will incorporate the obliques to a greater extent than the traditional variation of the exercise.", 
           "link":"https://www.muscleandstrength.com/exercises/rotating-mountain-climber",
           "reps":"40 sec * 2",
-          "goal": ["muscle", "fat"],
+          "goal":["muscle", "healthy", "fat"],
           "gender":["male", "female"],
           "intensity": 1
         },
@@ -513,7 +513,7 @@
           "desc":"The sit up is a classic abdominal exercise. It’s rarely performed anymore, however, it’s still a very effective flexion based exercise for those looking to utilize it to target their core.", 
           "link":"https://www.muscleandstrength.com/exercises/sit-up.html",
           "reps":"40 sec * 2",
-          "goal": ["muscle", "fat"],
+          "goal":["muscle", "healthy", "fat"],
           "gender":["male", "female"],
           "intensity": 2
         },
@@ -522,7 +522,7 @@
           "desc":"Set up for the lying floor leg raise by putting a mat on the floor and laying down on your back with your legs extended straight out and your arms by your side with palms on the floor. Get ready to start the set by lifting your heels off the floor slightly. Keeping your right leg straight out in front of you off the floor, raise your left leg slowly up to 90 degrees. Slowly lower your left leg back to the starting position without touching the floor and repeat the movement with your right leg.", 
           "link":"https://www.muscleandstrength.com/exercises/lying-alternate-floor-leg-raise.html",
           "reps":"40 sec * 2",
-          "goal": ["muscle", "fat"],
+          "goal":["muscle", "healthy", "fat"],
           "gender":["male", "female"],
           "intensity": 1
         },

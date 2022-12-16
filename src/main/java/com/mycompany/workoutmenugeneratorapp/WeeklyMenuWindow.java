@@ -25,6 +25,14 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
     private MyListModel saturdayModel;
     
     public void setElement(ArrayList<ArrayList<WorkoutMenuItem>> workoutMenu) {
+        sundayModel.clearElement();
+        mondayModel.clearElement();
+        tuesdayModel.clearElement();
+        wednesdayModel.clearElement();
+        thursdayModel.clearElement();
+        fridayModel.clearElement();
+        saturdayModel.clearElement();
+        
         for (int i = 0; i < workoutMenu.size(); i++) {
             ArrayList<WorkoutMenuItem> tmpMenu = workoutMenu.get(i);
             if (tmpMenu.size() >= 1) {
@@ -75,7 +83,11 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
         }
         public String getShortInfo(int i) {
             return menus.get(i).getDesc();
-        }                     
+        }
+        
+        public void clearElement() {
+            menus.clear();
+        }
     }    
     /**
      * Creates new form WeeklyMenuWindwo
