@@ -19,12 +19,54 @@ public class DailyMenuWindow extends javax.swing.JFrame {
     private UserInformationWindow userInfoWin;
     
     private ArrayList<ArrayList<WorkoutMenuItem>> weeklyMenu;
+    
+    private MyListModel myListModel;
+    
+    public void setDisplay() {
+        
+        myListModel.clearElement();
+        
+        Calendar calendar = Calendar.getInstance();       
+        int day = calendar.get(Calendar.DAY_OF_WEEK); 
+        
+        for (int i = 0; i < weeklyMenu.get(day - 1).size(); i++) {        
+            WorkoutMenuItem tmp = weeklyMenu.get(day - 1).get(i);
             
+            myListModel.addElement(tmp);
+        }              
+    }
+    
+    public static class MyListModel extends javax.swing.AbstractListModel<String> {
+        ArrayList<WorkoutMenuItem> menus = new ArrayList();
+
+        @Override
+        public int getSize() {
+            return menus.size();
+        }
+        @Override
+        public String getElementAt(int index) {
+            return menus.get(index).getName();
+        }
+        public void addElement(WorkoutMenuItem menu) {
+            menus.add(menu);
+            fireContentsChanged(this, menus.size()-1, menus.size()-1);
+        }
+        public String getShortInfo(int i) {
+            return menus.get(i).getDesc();
+        }  
+        
+        public void clearElement() {
+            menus.clear();
+        }
+    }    
+    
     /**
      * Creates new form DailyMenuWindow
      */
     public DailyMenuWindow() {
         initComponents();
+        myListModel = new MyListModel();
+        dailyMenuList.setModel(myListModel);
     }
 
     /**
@@ -46,7 +88,7 @@ public class DailyMenuWindow extends javax.swing.JFrame {
         instructionField = new javax.swing.JTextArea();
         instructionLabel = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        linkField = new javax.swing.JTextArea();
         menuDetailBtn = new javax.swing.JButton();
         weeklyBtn = new javax.swing.JButton();
         logOutBtn = new javax.swing.JButton();
@@ -85,12 +127,12 @@ public class DailyMenuWindow extends javax.swing.JFrame {
         instructionLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         instructionLabel.setText("Instructions URL:");
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jScrollPane3.setViewportView(jTextArea2);
+        linkField.setColumns(20);
+        linkField.setRows(5);
+        jScrollPane3.setViewportView(linkField);
 
         menuDetailBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        menuDetailBtn.setText("More Menu Detail");
+        menuDetailBtn.setText("Press this button for more details on the right side");
         menuDetailBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuDetailBtnActionPerformed(evt);
@@ -208,28 +250,20 @@ public class DailyMenuWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_logOutBtnActionPerformed
 
     private void menuDetailBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDetailBtnActionPerformed
-        // Test
-        this.displayMenu();
-    }//GEN-LAST:event_menuDetailBtnActionPerformed
-
-    public void displayMenu() {
+        // リストで選択されているメニューを特定して、右側に詳細を表示する。
+        int i = dailyMenuList.getSelectedIndex();
+        
         Calendar calendar = Calendar.getInstance();       
-        int day = calendar.get(Calendar.DAY_OF_WEEK);               
+        int day = calendar.get(Calendar.DAY_OF_WEEK); 
         
-        /*
-        if (day == 1) then show Sunday's menu              
-        if (day == 2) then show Monday's menu
-        if (day == 3) then show Tuesday's menu
-        if (day == 4) then show Wednesday's menu
-        if (day == 5) then show Thursday's menu
-        if (day == 6) then show Friday's menu
-        if (day == 7) then show Saturday's menu
-        */
+        ArrayList<WorkoutMenuItem> tmpMenus = weeklyMenu.get(day - 1);
         
-        // instructionField.setText(weeklyMenu.get(0).get(?).getDesc());
-        // repsField.setText(weeklyMenu.get(0).get(?).getReps());
-        // urlField.setText(weeklyMenu.get(0).get(?).getLink());
-    }
+        instructionField.setText(tmpMenus.get(i).getDesc());
+        repsField.setText(tmpMenus.get(i).getReps());
+        linkField.setText(tmpMenus.get(i).getLink());
+        
+    }//GEN-LAST:event_menuDetailBtnActionPerformed
+    
     
     public void setWeeklyMenu(ArrayList<ArrayList<WorkoutMenuItem>> weeklyMenu){
         this.weeklyMenu = weeklyMenu;
@@ -254,7 +288,7 @@ public class DailyMenuWindow extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea linkField;
     private javax.swing.JButton logOutBtn;
     private javax.swing.JButton menuDetailBtn;
     private javax.swing.JLabel nameLabel;

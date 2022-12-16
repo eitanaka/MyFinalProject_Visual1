@@ -82,21 +82,21 @@ public class WorkoutMenu {
     
     public ArrayList<WorkoutMenuItem> generateUpperMenu(String userGoal, String userGender) {
         ArrayList<WorkoutMenuItem> tmpMenu = new ArrayList<>();
-                      
-       tmpMenu.add(createMenuForUpper(chest, userGoal, userGender));       
+                                     
+       tmpMenu.add(createMenuForUpper(chest, userGoal, userGender));                     
        tmpMenu.add(createMenuForUpper(back, userGoal, userGender));       
        tmpMenu.add(createMenuForUpper(shoulder, userGoal, userGender));       
        tmpMenu.add(createMenuForUpper(biceps, userGoal, userGender));      
        tmpMenu.add(createMenuForUpper(triceps, userGoal, userGender));
-                
+                     
         return tmpMenu;
     }
     
-    public WorkoutMenuItem createMenuForUpper(ArrayList<WorkoutMenuItem> bodyPart, String userGoal, String userGender) {
-        WorkoutMenuItem tmp;
-        
+    public WorkoutMenuItem createMenuForUpper(ArrayList<WorkoutMenuItem> bodyPart, String userGoal, String userGender) {                
         int randNum;
-        Random rand = new Random();        
+        Random rand = new Random(); 
+        
+        WorkoutMenuItem tmp = new WorkoutMenuItem();
         
         while (true) {
             randNum = rand.nextInt(bodyPart.size());       
@@ -111,7 +111,7 @@ public class WorkoutMenu {
     }
     
     public ArrayList<WorkoutMenuItem> generateLowerMenu(String userGoal, String userGender) {
-       ArrayList<WorkoutMenuItem> tmpMenu;            
+       ArrayList<WorkoutMenuItem> tmpMenu;                      
        tmpMenu = createMenuForOnePartOfBody(lower, userGoal, userGender);
        return tmpMenu;
     }
@@ -239,44 +239,38 @@ public class WorkoutMenu {
             randNum = rand.nextInt(bodyPart.size());
             tmp = bodyPart.get(randNum);                        
             
-            if (tmp.getGoal().contains(userGoal) && tmp.getGender().contains(userGender)) {                                                        
-                // Pick High Intensity Menu randomly
+            if (tmp.getGoal().contains(userGoal) && tmp.getGender().contains(userGender)) {                                                                        
                 switch (tmp.getIntensity()) {
+                    // Pick High Intensity Menu randomly
                     case 3 -> {
                         if (!highIntensity) {
                             highIntensity = true;
-                            tmpMenus.add(tmp);
+                            tmpMenus.add(tmp);                              
                         }
                     }
+                    // Pick Mid Intensity Menu randomly
                     case 2 -> {
-                        if (!middleIntensity) {
-                            if (tmpMenus.size() >= 1) {                                
-                                if (!tmpMenus.contains(tmp)) {
-                                    tmpMenus.add(tmp);
-                                    midIntCounter++;
-                                }                                                                
-                            } else if (tmpMenus.size() <= 0) {
+                        if (!middleIntensity) {                                                           
+                            if (!tmpMenus.contains(tmp)) {
                                 tmpMenus.add(tmp);
-                                midIntCounter++;
-                            }
+                                midIntCounter++;                                    
+                            }                                                                                            
                             if (midIntCounter >= 3) {
                                 middleIntensity = true;
+                                
                             }
                         }
                     }
+                    // Pick Low Intensity Menu randomly
                     default -> {
-                        if (!lowIntensity) {
-                            if (tmpMenus.size() >= 1) {                                
-                                if (!tmpMenus.contains(tmp))  {
-                                    tmpMenus.add(tmp);
-                                    lowIntCounter++;
-                                }                                                              
-                            } else if (tmpMenus.size() <= 0) {
+                        if (!lowIntensity) {                            
+                            if (!tmpMenus.contains(tmp))  {
                                 tmpMenus.add(tmp);
-                                lowIntCounter++;                                                                                                 
-                            }
+                                lowIntCounter++;                                
+                            }                                                                                          
                             if (lowIntCounter >= 2) {
                                 lowIntensity = true;
+                                System.out.println("hello");
                             }
                         }
                     }
@@ -359,9 +353,7 @@ public class WorkoutMenu {
     
     public ArrayList<WorkoutMenuItem> generateCardioMenu(String userGoal, String userGender) {
        ArrayList<WorkoutMenuItem> tmpMenu = new ArrayList<>();
-       
-       // Cardio Menu
-       // Cardio Menu * 1 or 2
+              
        int randNum;
        Random rand = new Random();
        
@@ -371,16 +363,17 @@ public class WorkoutMenu {
        
        while (true) {
            randNum = rand.nextInt(cardio.size());
-           tmp= cardio.get(randNum);
+           tmp= cardio.get(randNum);                      
            
            if (tmp.getGoal().contains(userGoal) && tmp.getGender().contains(userGender)) {
                tmpMenu.add(tmp);
                menuCounter++;
            }
-           if (menuCounter >= 2) {
+           if (menuCounter >= 2) {               
                break;
            }
        }
+       
        return tmpMenu;
     }
 }

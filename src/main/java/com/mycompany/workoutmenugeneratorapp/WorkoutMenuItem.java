@@ -33,7 +33,7 @@ public class WorkoutMenuItem {
         this.goal = goal;
         this.gender = gender;
         this.intensity = intensity;
-    }
+    } 
 
     public String getName() {
         return this.name;

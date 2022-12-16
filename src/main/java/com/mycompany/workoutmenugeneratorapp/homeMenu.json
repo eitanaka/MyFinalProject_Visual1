@@ -84,44 +84,116 @@
         }
     ],
     "back": [
-      {
+        {
             "name":"Dead Lift",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
+            "desc":"The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.\nFor powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body.\n By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders.\nNot everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+            "link":"https://www.muscleandstrength.com/exercises/barbell-bench-press.html",
+            "reps":"10 8 8 6",          
             "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
+            "gender":["male", "female"],
             "intensity": 3
         },
         {
             "name":"Lat Pull Down",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
+            "desc":"The incline bench press is a variation of the bench press and an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well. Utilizing an incline will allow you to better target the upper portion of the chest, a lagging part for a lot of lifters. You can include incline bench press in your chest workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/incline-bench-press.html",
+            "reps":"10 10 10",          
             "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
-            "intensity": 3
-        }  
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Seated Low",
+            "desc":"The decline bench press is a variation of the bench press and an exercise used to target the muscles of the chest. It will also indirectly target the muscles of the shoulders and triceps.\nThe decline bench press is commonly used to target the lower portion of the pecs. However, some argue that it is the most effective bench press variation for targeting the entire chest.\nBench press variations can be included in your chest workouts, push workouts, upper body workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/decline-bench-press.html",
+            "reps":"10 10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Dumbblle Rows",
+            "desc":"The dumbbell bench press is a variation of the barbell bench press and an exercise used to build the muscles of the chest.\nOften times, the dumbbell bench press is recommended after reaching a certain point of strength on the barbell bench press to avoid pec and shoulder injuries.\nAdditionally, the dumbbell bench press provides an ego check in the amount of weight used due to the need to maintain shoulder stability throughout the exercise.\nThe exercise itself can be featured as a main lift in your workouts or an accessory lift to the bench press depending on your goals.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-bench-press.html",
+            "reps":"10 10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Wide Push Up",
+            "desc":"The dumbbell fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger.\nThe dumbbell fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. The movement itself can be used to help build a stronger bench press but isn’t typically thought of from an increased performance stand-point.\nThus, this movement is best reserved for traditional chest workouts in bodybuilding style splits.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-flys.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Rear Raise",
+            "desc":"Grasp a dumbbell with both hands and position yourself on a flat bench with your shoulder blades resting on the bench.\nYou should be at a 90 degree angle to the bench. Your back shoulder be straight, knees bent at 90 degrees, and feet firmly plated on the floor.\nHolding the dumbbell in both hands, straighten your arms so that dumbbell is directly overhead. This is the starting position.\nBending at the shoulders only and keeping your arms straight, slowly lower the weight down behind your head until the dumbbell reaches the height of the bench.\nSlowly raise the dumbbell back to the starting position.\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-pullover.html",
+            "reps":"10 10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        }
     ],
     "shoulder": [
         {
-            "name":"Militally Press",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
+            "name":"Millitary Press",
+            "desc":"The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program.\nFor powerlifters, it is known as one of the “big three” lifts which includes the squat, deadlift, and bench press. For athletes, 1 rep max on bench press is a good indicator for on field/court performance. And for bodybuilders, the bench press is a compound exercise that targets many of the muscles in your upper body.\n By performing the bench press, you primarily work your pectoralis major (your chest). Other muscles which assist in moving the barbell during a bench press are other muscles of the chest, triceps, and shoulders.\nNot everyone is built to perform the traditional barbell bench press, so several variations have been created to ensure people can train this crucial movement pattern in a safe and comfortable way.",
+            "link":"https://www.muscleandstrength.com/exercises/barbell-bench-press.html",
+            "reps":"10 8 8 6",          
             "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
+            "gender":["male", "female"],
             "intensity": 3
         },
         {
-            "name":"Arnold Press",
-            "desc":"...",
-            "link":"...",
-            "reps":"10 8 8 6 4",          
+            "name":"Seated Dumbblle Push",
+            "desc":"The incline bench press is a variation of the bench press and an exercise used to build the muscles of the chest. The shoulders and triceps will be indirectly involved as well. Utilizing an incline will allow you to better target the upper portion of the chest, a lagging part for a lot of lifters. You can include incline bench press in your chest workouts, upper body workouts, push workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/incline-bench-press.html",
+            "reps":"10 10 10",          
             "goal":["muscle", "healthy", "fat"],
-            "gender":["male"],
-            "intensity": 3
-        }  
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Arnold Press",
+            "desc":"The dumbbell bench press is a variation of the barbell bench press and an exercise used to build the muscles of the chest.\nOften times, the dumbbell bench press is recommended after reaching a certain point of strength on the barbell bench press to avoid pec and shoulder injuries.\nAdditionally, the dumbbell bench press provides an ego check in the amount of weight used due to the need to maintain shoulder stability throughout the exercise.\nThe exercise itself can be featured as a main lift in your workouts or an accessory lift to the bench press depending on your goals.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-bench-press.html",
+            "reps":"10 10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Decline Bench Press",
+            "desc":"The decline bench press is a variation of the bench press and an exercise used to target the muscles of the chest. It will also indirectly target the muscles of the shoulders and triceps.\nThe decline bench press is commonly used to target the lower portion of the pecs. However, some argue that it is the most effective bench press variation for targeting the entire chest.\nBench press variations can be included in your chest workouts, push workouts, upper body workouts, and full body workouts.",
+            "link":"https://www.muscleandstrength.com/exercises/decline-bench-press.html",
+            "reps":"8 8 6",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 2
+        },
+        {
+            "name":"Dumbbell Flys",
+            "desc":"The dumbbell fly utilizes a chest fly movement pattern to isolate the muscles fo the chest to better help the muscles grow and become stronger.\nThe dumbbell fly is often thought of as a classic bodybuilding movement as the goal of the exercise is to isolate the chest for aesthetic purposes. The movement itself can be used to help build a stronger bench press but isn’t typically thought of from an increased performance stand-point.\nThus, this movement is best reserved for traditional chest workouts in bodybuilding style splits.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-flys.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        },
+        {
+            "name":"Dumbbell Pullover",
+            "desc":"Grasp a dumbbell with both hands and position yourself on a flat bench with your shoulder blades resting on the bench.\nYou should be at a 90 degree angle to the bench. Your back shoulder be straight, knees bent at 90 degrees, and feet firmly plated on the floor.\nHolding the dumbbell in both hands, straighten your arms so that dumbbell is directly overhead. This is the starting position.\nBending at the shoulders only and keeping your arms straight, slowly lower the weight down behind your head until the dumbbell reaches the height of the bench.\nSlowly raise the dumbbell back to the starting position.\nRepeat for desired reps.",
+            "link":"https://www.muscleandstrength.com/exercises/dumbbell-pullover.html",
+            "reps":"10 10",          
+            "goal":["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
+            "intensity": 1
+        }
     ],
     "lower": [
         {
@@ -194,7 +266,7 @@
             "reps":"12 10 12",
             "goal": ["muscle"],
             "gender":["male"],
-            "intensity":3
+            "intensity":2
         },
          { 
             "name":"Dumbbell Goblet Squat",
@@ -470,8 +542,8 @@
             "desc":"Drop down into a squat position. Place the hands on the floor. Kick the legs back behind you so that you end up in a push-up position. Perform a pushup. Bring the knees back in. Return to the standing position and jump in one motion. Repeat until time expires.", 
             "link":"https://www.muscleandstrength.com/workouts/20-minute-hiit-workout",
             "reps":"20-30sec * 2",
-            "goal": ["healthy","far"],
-            "gender":["male","female"],
+            "goal": ["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
             "intensity":2
         },
         {
@@ -479,8 +551,8 @@
             "desc":"I don’t think you need instructions on running in place, do you? Good. Let’s move on.", 
             "link":"https://www.muscleandstrength.com/workouts/20-minute-hiit-workout",
             "reps":"10 min * 2",
-            "goal": ["healthy","far"],
-            "gender":["male","female"],
+            "goal": ["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
             "intensity":1
         },
         {
@@ -488,8 +560,8 @@
             "desc":"I don’t think you need instructions on running in place, do you? Good. Let’s move on.", 
             "link":"https://www.military.com/military-fitness/workouts/do-you-jump-rope-workout-for-beginning-jumpers",
             "reps":"25 jumps, 30sec rest",
-            "goal": ["healthy","far"],
-            "gender":["male","female"],
+            "goal": ["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
             "intensity":1
         },
         {
@@ -497,8 +569,8 @@
             "desc":"The wide circle motion in this full-body move puts extra emphasis on your back and grip strength, says Adams. Make the circles as big as you can, using your legs only if you need to. “I recommend keeping as much momentum going throughout the exercise as possible, because the more you slow down, the heavier those ropes will feel and the harder it will be to get those ropes moving again,” Adams says.", 
             "link":"https://dailyburn.com/life/fitness/battle-rope-exercises-full-body-workout/",
             "reps":"30sec * 3",
-            "goal": ["healthy","far"],
-            "gender":["male","female"],
+            "goal": ["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
             "intensity":2
         },
         {
@@ -506,8 +578,8 @@
             "desc":"I don’t think you need instructions on running in place, do you? Good. Let’s move on.", 
             "link":"https://www.coachmag.co.uk/equipment/exercise-bike/4109/stationary-bike-workouts",
             "reps":"10 min * 2",
-            "goal": ["healthy","far"],
-            "gender":["male","female"],
+            "goal": ["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
             "intensity":1
         },
         {
@@ -515,8 +587,8 @@
             "desc":"Another cardio workout at home that might bring you back to your childhood is jumping jacks. Similar to burpees, doing jumping jacks for 10 minutes straight can burn around 100 calories. You can easily integrate jumping jacks into a circuit training that includes some of the other exercises on this page, such as burpees, jumping rope and squat jumps. With no equipment necessary, you can perform jumping jacks anywhere at any time.", 
             "link":"https://meritagemed.com/8-best-cardio-workouts/",
             "reps":"20-30sec * 2",
-            "goal": ["healthy","far"],
-            "gender":["male","female"],
+            "goal": ["muscle", "healthy", "fat"],
+            "gender":["male", "female"],
             "intensity":1
         }        
     ]

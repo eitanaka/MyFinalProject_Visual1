@@ -40,12 +40,6 @@ public class UserInformationWindow extends javax.swing.JFrame {
         bodyInfoLabel = new javax.swing.JLabel();
         goalLabel = new javax.swing.JLabel();
         frequencyLabel = new javax.swing.JLabel();
-        heightLabel = new javax.swing.JLabel();
-        weightLabel = new javax.swing.JLabel();
-        heightField = new javax.swing.JTextField();
-        weightField = new javax.swing.JTextField();
-        ageLabel = new javax.swing.JLabel();
-        ageField = new javax.swing.JTextField();
         genderLabel = new javax.swing.JLabel();
         maleBox = new javax.swing.JCheckBox();
         femaleBox = new javax.swing.JCheckBox();
@@ -86,30 +80,6 @@ public class UserInformationWindow extends javax.swing.JFrame {
         frequencyLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         frequencyLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         frequencyLabel.setText("Frequency:");
-
-        heightLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        heightLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        heightLabel.setText("Height:");
-
-        weightLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        weightLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        weightLabel.setText("Weight:");
-
-        heightField.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        heightField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                heightFieldActionPerformed(evt);
-            }
-        });
-
-        weightField.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-
-        ageLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        ageLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ageLabel.setText("Age:");
-
-        ageField.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        ageField.setToolTipText("");
 
         genderLabel.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
         genderLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -261,10 +231,6 @@ public class UserInformationWindow extends javax.swing.JFrame {
                 .addComponent(titleLable)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(userInfoLabel)
-                .addGap(436, 436, 436))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(logOutBtn)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -280,56 +246,53 @@ public class UserInformationWindow extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(bodyInfoLabel)
-                                        .addGap(265, 265, 265))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(heightLabel)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(heightField, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(weightLabel)
-                                                    .addComponent(ageLabel)
-                                                    .addComponent(genderLabel))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(weightField)
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(maleBox)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(femaleBox)
-                                                        .addGap(0, 0, Short.MAX_VALUE))
-                                                    .addComponent(ageField))))
-                                        .addGap(204, 204, 204)))
+                                    .addComponent(bodyInfoLabel)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(genderLabel)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(maleBox)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(femaleBox)))
+                                .addGap(211, 211, 211)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(fatLossBox)
-                                    .addComponent(goalLabel)
-                                    .addComponent(muscleBox)
-                                    .addComponent(healthyBox)))
-                            .addComponent(gymBox)
-                            .addComponent(homeBox))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(goalLabel)
+                                            .addComponent(healthyBox))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(fatLossBox)
+                                            .addComponent(muscleBox))
+                                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(gymBox)
+                                    .addComponent(homeBox))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(frequencyLabel, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(dayLabel)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(sundayBox)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(mondayBox)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(tuesdayBox))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(wednesdayBox)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(thursdayBox)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(fridayBox))
-                                .addComponent(saturdayBox)))
+                            .addComponent(dayLabel)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(sundayBox)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(mondayBox)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(tuesdayBox))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(wednesdayBox)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(thursdayBox)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(fridayBox))
+                            .addComponent(saturdayBox)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(58, 58, 58)
+                                .addComponent(frequencyLabel)))
                         .addGap(69, 69, 69))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(userInfoLabel)
+                .addGap(437, 437, 437))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -345,40 +308,32 @@ public class UserInformationWindow extends javax.swing.JFrame {
                     .addComponent(frequencyLabel))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(heightLabel)
-                    .addComponent(heightField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(fatLossBox)
-                    .addComponent(dayLabel))
+                    .addComponent(dayLabel)
+                    .addComponent(genderLabel)
+                    .addComponent(maleBox)
+                    .addComponent(femaleBox))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(weightLabel)
-                    .addComponent(weightField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(muscleBox)
                     .addComponent(sundayBox)
                     .addComponent(mondayBox)
                     .addComponent(tuesdayBox))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ageLabel)
-                    .addComponent(ageField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(healthyBox)
                     .addComponent(wednesdayBox)
                     .addComponent(thursdayBox)
                     .addComponent(fridayBox))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(genderLabel)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(maleBox)
-                        .addComponent(femaleBox)
-                        .addComponent(saturdayBox)))
+                .addComponent(saturdayBox)
                 .addGap(46, 46, 46)
                 .addComponent(equipmentLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(gymBox)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(homeBox)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 242, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 248, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(generateMenuBtn)
                     .addComponent(logOutBtn))
@@ -408,8 +363,8 @@ public class UserInformationWindow extends javax.swing.JFrame {
         weeklyMenu = new ArrayList<>();
         boolean[] selectedDate = new boolean[7];
         
-        ArrayList<WorkoutMenuItem> restList = new ArrayList<>();                        
-                     
+        ArrayList<WorkoutMenuItem> restList = new ArrayList<>();                                       
+        
         // This variable contains all workout menu
         WorkoutMenu workoutMenu = new WorkoutMenu();
         
@@ -423,8 +378,7 @@ public class UserInformationWindow extends javax.swing.JFrame {
             if ((maleBox.isSelected() || femaleBox.isSelected()) &&
             (homeBox.isSelected() || gymBox.isSelected()) &&
             (muscleBox.isSelected() || healthyBox.isSelected() || fatLossBox.isSelected()) &&
-            (sundayBox.isSelected() || mondayBox.isSelected() || tuesdayBox.isSelected() || wednesdayBox.isSelected() || thursdayBox.isSelected() || fridayBox.isSelected() || saturdayBox.isSelected()) &&
-            (!(heightField.getText().isEmpty()) && !(weightField.getText().isEmpty()) && !(ageField.getText().isEmpty())))
+            (sundayBox.isSelected() || mondayBox.isSelected() || tuesdayBox.isSelected() || wednesdayBox.isSelected() || thursdayBox.isSelected() || fridayBox.isSelected() || saturdayBox.isSelected()))
             {                                
                 isGood = true;
             } else {
@@ -493,8 +447,8 @@ public class UserInformationWindow extends javax.swing.JFrame {
             counter++;
         } else {
             selectedDate[6] = false;
-        }
-                       
+        }                   
+        
         // Step3 Create Gson Object for menu                                
         try {
             if (gymBox.isSelected()) {
@@ -512,8 +466,8 @@ public class UserInformationWindow extends javax.swing.JFrame {
         switch (counter) {
             case 1 -> tmpMenuList.add(workoutMenu.generateTotalMenu(userGoal, userGender));
             case 2 -> {
-                tmpMenuList.add(workoutMenu.generateUpperMenu(userGoal, userGender));
-                tmpMenuList.add(workoutMenu.generateLowerMenu(userGoal, userGender));
+                tmpMenuList.add(workoutMenu.generateUpperMenu(userGoal, userGender));                
+                tmpMenuList.add(workoutMenu.generateLowerMenu(userGoal, userGender));                
             }
             case 3 -> {
                 tmpMenuList.add(workoutMenu.generatePushMenu(userGoal, userGender));
@@ -550,8 +504,7 @@ public class UserInformationWindow extends javax.swing.JFrame {
                 tmpMenuList.add(workoutMenu.generateArmMenu(userGoal, userGender));
                 tmpMenuList.add(workoutMenu.generateAbsMenu(userGoal, userGender));
             }            
-        }
-            
+        }                            
         //Step 5: Insert ArrayList<WorkoutMenuItem> into corresponding place
         int menuCounter = 0;                
         for (int i = 0; i < 7; i++) {
@@ -567,6 +520,7 @@ public class UserInformationWindow extends javax.swing.JFrame {
         // Fin.        
         this.weeklyMenuWin.setWeeklyMenu(weeklyMenu);
         this.dailyMenuWin.setWeeklyMenu(weeklyMenu);
+        this.weeklyMenuWin.setElement(weeklyMenu);
         this.setVisible(false);
         this.weeklyMenuWin.setVisible(true);        
         
@@ -637,10 +591,6 @@ public class UserInformationWindow extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_saturdayBoxActionPerformed
 
-    private void heightFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_heightFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_heightFieldActionPerformed
-
     private void logOutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logOutBtnActionPerformed
         this.setVisible(false);
         logInWin.setVisible(true);
@@ -661,8 +611,6 @@ public class UserInformationWindow extends javax.swing.JFrame {
         this.dailyMenuWin = dailyMenuWin;
     }    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField ageField;
-    private javax.swing.JLabel ageLabel;
     private javax.swing.JLabel bodyInfoLabel;
     private javax.swing.JLabel dayLabel;
     private javax.swing.JLabel equipmentLabel;
@@ -675,8 +623,6 @@ public class UserInformationWindow extends javax.swing.JFrame {
     private javax.swing.JLabel goalLabel;
     private javax.swing.JCheckBox gymBox;
     private javax.swing.JCheckBox healthyBox;
-    private javax.swing.JTextField heightField;
-    private javax.swing.JLabel heightLabel;
     private javax.swing.JCheckBox homeBox;
     private javax.swing.JButton logOutBtn;
     private javax.swing.JCheckBox maleBox;
@@ -689,8 +635,6 @@ public class UserInformationWindow extends javax.swing.JFrame {
     private javax.swing.JCheckBox tuesdayBox;
     private javax.swing.JLabel userInfoLabel;
     private javax.swing.JCheckBox wednesdayBox;
-    private javax.swing.JTextField weightField;
-    private javax.swing.JLabel weightLabel;
     // End of variables declaration//GEN-END:variables
 
 }

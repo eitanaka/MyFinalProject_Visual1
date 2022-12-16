@@ -14,39 +14,88 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
     private LogInWindow logInWin;
     private UserInformationWindow userInfoWin;            
     private DailyMenuWindow dailyMenuWin;  
-    private ArrayList<ArrayList<WorkoutMenuItem>> weeklyMenu;    
-//    
-//    public static class MyListModel extends javax.swing.AbstractListModel<String> {
-//        ArrayList<WorkoutMenuItem> menus = new ArrayList();
-//
-//        @Override
-//        public int getSize() {
-//            return menus.size();
-//        }
-//        @Override
-//        public String getElementAt(int index) {
-//            return menus.get(index).getName();
-//        }
-//        public void addElement(WorkoutMenuItem menu) {
-//            menus.add(menu);
-//            fireContentsChanged(this, menus.size()-1, menus.size()-1);
-//        }
-//        public String getShortInfo(int i) {
-//            return menus.get(i).getDesc();
-//        }                     
-//    }    
+    private ArrayList<ArrayList<WorkoutMenuItem>> weeklyMenu;
+
+    private MyListModel sundayModel;
+    private MyListModel mondayModel;
+    private MyListModel tuesdayModel;
+    private MyListModel wednesdayModel;
+    private MyListModel thursdayModel;
+    private MyListModel fridayModel;
+    private MyListModel saturdayModel;
+    
+    public void setElement(ArrayList<ArrayList<WorkoutMenuItem>> workoutMenu) {
+        for (int i = 0; i < workoutMenu.size(); i++) {
+            ArrayList<WorkoutMenuItem> tmpMenu = workoutMenu.get(i);
+            if (tmpMenu.size() >= 1) {
+                for (int j = 0; j < tmpMenu.size(); j++){
+                    WorkoutMenuItem tmp = tmpMenu.get(j);
+                    switch (i) {
+                        case 0 -> {
+                            sundayModel.addElement(tmp);
+                        }     
+                        case 1 -> {
+                            mondayModel.addElement(tmp);
+                        }
+                        case 2 -> {
+                            tuesdayModel.addElement(tmp);
+                        }
+                        case 3 -> {
+                            wednesdayModel.addElement(tmp);
+                        }
+                        case 4 -> {
+                            thursdayModel.addElement(tmp);
+                        }
+                        case 5 -> {
+                            fridayModel.addElement(tmp);
+                        }
+                        default -> {
+                            saturdayModel.addElement(tmp);
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+   
+    public static class MyListModel extends javax.swing.AbstractListModel<String> {
+        ArrayList<WorkoutMenuItem> menus = new ArrayList();
+
+        @Override
+        public int getSize() {
+            return menus.size();
+        }
+        @Override
+        public String getElementAt(int index) {
+            return menus.get(index).getName();
+        }
+        public void addElement(WorkoutMenuItem menu) {
+            menus.add(menu);
+            fireContentsChanged(this, menus.size()-1, menus.size()-1);
+        }
+        public String getShortInfo(int i) {
+            return menus.get(i).getDesc();
+        }                     
+    }    
     /**
      * Creates new form WeeklyMenuWindwo
      */
     public WeeklyMenuWindow() {
         initComponents(); 
-//        sundayList.setModel(sundayModel);
-//        mondayList.setModel(mondayModel);
-//        tuesdayList.setModel(tuesdayModel);
-//        wednesdayList.setModel(wednesdayModel);
-//        thursdayList.setModel(thursdayModel);
-//        fridayList.setModel(fridayModel);
-//        saturdayList.setModel(saturdayModel);
+        sundayModel = new MyListModel();
+        mondayModel = new MyListModel();
+        tuesdayModel = new MyListModel();
+        wednesdayModel = new MyListModel();
+        thursdayModel = new MyListModel();
+        fridayModel = new MyListModel();
+        saturdayModel = new MyListModel();
+        sundayList.setModel(sundayModel);
+        mondayList.setModel(mondayModel);
+        tuesdayList.setModel(tuesdayModel);
+        wednesdayList.setModel(wednesdayModel);
+        thursdayList.setModel(thursdayModel);
+        fridayList.setModel(fridayModel);
+        saturdayList.setModel(saturdayModel);
     }
 
     /**
@@ -81,7 +130,6 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
         fridayList = new javax.swing.JList<>();
         jScrollPane7 = new javax.swing.JScrollPane();
         saturdayList = new javax.swing.JList<>();
-        detailBtn = new javax.swing.JButton();
         dailyMenuBtn1 = new javax.swing.JButton();
         logOutBtn = new javax.swing.JButton();
 
@@ -182,14 +230,6 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
         });
         jScrollPane7.setViewportView(saturdayList);
 
-        detailBtn.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
-        detailBtn.setText("Menu Detail");
-        detailBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                detailBtnActionPerformed(evt);
-            }
-        });
-
         dailyMenuBtn1.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         dailyMenuBtn1.setText("Daily Menu");
         dailyMenuBtn1.addActionListener(new java.awt.event.ActionListener() {
@@ -210,94 +250,109 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(60, 60, 60)
                 .addComponent(sundayLabel)
-                .addGap(100, 100, 100)
+                .addGap(252, 252, 252)
                 .addComponent(mondayLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(tuesdayLabel)
-                .addGap(61, 61, 61)
+                .addGap(228, 228, 228)
                 .addComponent(wednesdayLabel)
-                .addGap(61, 61, 61)
-                .addComponent(thursdayLabel)
-                .addGap(87, 87, 87)
-                .addComponent(fridayLabel)
-                .addGap(81, 81, 81)
-                .addComponent(saturdayLabel)
                 .addGap(61, 61, 61))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(logOutBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(dailyMenuBtn1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(53, 53, 53)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(106, 106, 106)
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(120, 120, 120)
+                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(78, 78, 78)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(titleLabel)
-                        .addGap(352, 352, 352))
+                        .addComponent(fridayLabel)
+                        .addGap(267, 267, 267)
+                        .addComponent(saturdayLabel)
+                        .addGap(211, 211, 211))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(weeklyLabel)
-                        .addGap(437, 437, 437))))
+                        .addComponent(titleLabel)
+                        .addGap(417, 417, 417))))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(detailBtn)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(188, 188, 188)
+                        .addComponent(thursdayLabel))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(logOutBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(dailyMenuBtn1)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                        .addGap(499, 499, 499)
+                        .addComponent(weeklyLabel)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(12, 12, 12)
                 .addComponent(titleLabel)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(weeklyLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(sundayLabel)
                     .addComponent(mondayLabel)
                     .addComponent(tuesdayLabel)
-                    .addComponent(wednesdayLabel)
-                    .addComponent(thursdayLabel)
-                    .addComponent(fridayLabel)
-                    .addComponent(saturdayLabel))
+                    .addComponent(wednesdayLabel))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
-                    .addComponent(jScrollPane3)
                     .addComponent(jScrollPane2)
-                    .addComponent(jScrollPane4)
-                    .addComponent(jScrollPane5)
-                    .addComponent(jScrollPane6)
-                    .addComponent(jScrollPane7))
-                .addGap(18, 18, 18)
-                .addComponent(detailBtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 244, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(dailyMenuBtn1)
-                    .addComponent(logOutBtn))
-                .addGap(15, 15, 15))
+                    .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(thursdayLabel)
+                                    .addComponent(fridayLabel))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(saturdayLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(50, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(logOutBtn)
+                            .addComponent(dailyMenuBtn1))
+                        .addContainerGap())))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void dailyMenuBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dailyMenuBtn1ActionPerformed
-        dailyMenuWin.displayMenu();
+        dailyMenuWin.setDisplay();
         this.setVisible(false);
         dailyMenuWin.setVisible(true);
     }//GEN-LAST:event_dailyMenuBtn1ActionPerformed
@@ -306,11 +361,6 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
         this.setVisible(false);
         logInWin.setVisible(true);
     }//GEN-LAST:event_logOutBtnActionPerformed
-
-    private void detailBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_detailBtnActionPerformed
-        // TODO add your handling code here:
-        System.out.println(weeklyMenu.get(0).get(0).getName());
-    }//GEN-LAST:event_detailBtnActionPerformed
 
     // Connect Each Window
     public void setUserInfoWindow(UserInformationWindow userInfoWin) {
@@ -329,7 +379,6 @@ public class WeeklyMenuWindow extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton dailyMenuBtn1;
-    private javax.swing.JButton detailBtn;
     private javax.swing.JLabel fridayLabel;
     private javax.swing.JList<String> fridayList;
     private javax.swing.JScrollPane jScrollPane1;

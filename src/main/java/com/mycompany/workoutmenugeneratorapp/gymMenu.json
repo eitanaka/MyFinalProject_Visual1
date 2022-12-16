@@ -282,7 +282,7 @@
         "reps":"10 10 10",
         "goal": ["muscle", "healthy", "fat"],
         "gender":["male", "female"],
-        "intensity":1
+        "intensity":2
     },
     { 
         "name":"Dumbbell Lunge",
@@ -291,7 +291,7 @@
         "reps":"10 10",
         "goal": ["muscle", "healthy", "fat"],
         "gender":["male", "female"],
-        "intensity":1
+        "intensity":2
     },
     { 
         "name":"Kettlebell Swing",
@@ -549,7 +549,7 @@
         "desc":"Drop down into a squat position. Place the hands on the floor. Kick the legs back behind you so that you end up in a push-up position. Perform a pushup. Bring the knees back in. Return to the standing position and jump in one motion. Repeat until time expires.", 
         "link":"https://www.muscleandstrength.com/workouts/20-minute-hiit-workout",
         "reps":"20-30sec * 2",
-        "goal": ["healthy","far"],
+        "goal": ["muscle", "healthy", "fat"],
         "gender":["male","female"],
         "intensity":2
     },
@@ -558,7 +558,7 @@
         "desc":"I don’t think you need instructions on running in place, do you? Good. Let’s move on.", 
         "link":"https://www.muscleandstrength.com/workouts/20-minute-hiit-workout",
         "reps":"10 min * 2",
-        "goal": ["healthy","far"],
+        "goal": ["muscle", "healthy", "fat"],
         "gender":["male","female"],
         "intensity":1
     },
@@ -567,7 +567,7 @@
         "desc":"I don’t think you need instructions on running in place, do you? Good. Let’s move on.", 
         "link":"https://www.military.com/military-fitness/workouts/do-you-jump-rope-workout-for-beginning-jumpers",
         "reps":"25 jumps, 30sec rest",
-        "goal": ["healthy","far"],
+        "goal": ["muscle", "healthy", "fat"],
         "gender":["male","female"],
         "intensity":1
     },
@@ -576,7 +576,7 @@
         "desc":"The wide circle motion in this full-body move puts extra emphasis on your back and grip strength, says Adams. Make the circles as big as you can, using your legs only if you need to. “I recommend keeping as much momentum going throughout the exercise as possible, because the more you slow down, the heavier those ropes will feel and the harder it will be to get those ropes moving again,” Adams says.", 
         "link":"https://dailyburn.com/life/fitness/battle-rope-exercises-full-body-workout/",
         "reps":"30sec * 3",
-        "goal": ["healthy","far"],
+        "goal": ["muscle", "healthy", "fat"],
         "gender":["male","female"],
         "intensity":2
     },
@@ -585,7 +585,7 @@
         "desc":"I don’t think you need instructions on running in place, do you? Good. Let’s move on.", 
         "link":"https://www.coachmag.co.uk/equipment/exercise-bike/4109/stationary-bike-workouts",
         "reps":"10 min * 2",
-        "goal": ["healthy","far"],
+        "goal": ["muscle", "healthy", "fat"],
         "gender":["male","female"],
         "intensity":1
     },
@@ -594,7 +594,7 @@
         "desc":"Another cardio workout at home that might bring you back to your childhood is jumping jacks. Similar to burpees, doing jumping jacks for 10 minutes straight can burn around 100 calories. You can easily integrate jumping jacks into a circuit training that includes some of the other exercises on this page, such as burpees, jumping rope and squat jumps. With no equipment necessary, you can perform jumping jacks anywhere at any time.", 
         "link":"https://meritagemed.com/8-best-cardio-workouts/",
         "reps":"20-30sec * 2",
-        "goal": ["healthy","far"],
+        "goal": ["muscle", "healthy", "fat"],
         "gender":["male","female"],
         "intensity":1
     }        
